@@ -11,10 +11,11 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<div class="hero-container">
+				<img src="<?php bloginfo('template_url')?>/images/logos/inhabitent-logo-full.svg" alt ="Inhabitent Logo">
 			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?//php get_sidebar(); ?>
 <?php get_footer(); ?>
