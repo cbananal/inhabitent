@@ -475,7 +475,8 @@ a {
   float: left;
   width: 100%; }
   .main-navigation ul {
-    display: none;
+    display: -ms-flexbox;
+    display: flex;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -509,12 +510,6 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
-
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -534,13 +529,38 @@ a {
   text-align: right;
   width: 50%; }
 
+/*=======================================*/
+/*------ Inhabitent: Custom Styles ------*/
+/*=======================================*/
+.main-nav-container {
+  width: 1120px;
+  margin: 0px auto;
+  padding: 5px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.main-navigation {
+  width: auto;
+  -ms-flex-item-align: center;
+      align-self: center; }
+  .main-navigation a {
+    padding: 0 15px;
+    color: #248A83;
+    font-family: "Novecento";
+    text-transform: uppercase; }
+    .main-navigation a:hover {
+      color: #2f1339; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
   height: 1px;
   width: 1px;
   overflow: hidden; }
@@ -591,9 +611,6 @@ a {
   content: "";
   display: table; }
 
-/*=======================================*/
-/*------ Inhabitent: Custom Styles ------*/
-/*=======================================*/
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -712,31 +729,22 @@ object {
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/
 /*=======================================*/
-.site-description {
-  display: none; }
-
 .site-header {
   width: 100vw;
-  height: 54px;
   background-color: #fff;
   border-bottom: 1px solid #a1a1a1;
   position: fixed;
   opacity: 0.7; }
 
-.menu-main-container {
-  width: 1120px;
-  margin: 0 auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-  .menu-main-container a {
-    padding: 15px;
-    color: #248A83;
-    font-family: "Novecento";
-    text-transform: uppercase; }
-    .menu-main-container a:hover {
-      color: #2f1339; }
+.site-header h1 {
+  width: 50px;
+  height: 35px;
+  margin: 0;
+  background: url("../../images/logos/inhabitent-logo-tent.svg") no-repeat;
+  background-size: 50px 35px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap; }
 
 .hero-container {
   height: 100vh;
