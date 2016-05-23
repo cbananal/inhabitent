@@ -102,3 +102,14 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+
+/*========================================*/
+/*----- Inhabitent: Custom Functions -----*/
+/*========================================*/
+
+//Link Font-Awesome Stylesheet
+function inhabitent_font_awesome(){
+	wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/font-awesome/css/font-awesome.css');
+}
+add_action('wp_enqueue_scripts','inhabitent_font_awesome');

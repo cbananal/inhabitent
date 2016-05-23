@@ -10,9 +10,16 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<div class="hero-container">
+			<section class="hero-container">
 				<img src="<?php bloginfo('template_url')?>/images/logos/inhabitent-logo-full.svg" alt ="Inhabitent Logo">
-			</div>
+			</section>
+			<!--end hero-container-->
+			<section class="shop-cta">
+			</section>
+			<section class="featured-entries">
+			</section>
+			<section class="featured-adventures">
+			</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

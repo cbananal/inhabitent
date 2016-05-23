@@ -33,11 +33,17 @@ $font__line-height-pre: 1.6;
 /*=======================================*/
 
 /* Colors */
-$color_bg: #fff;
+$color_background: #fff;
+$color_text: #404040;
+$color_text-link: #fff;
 $color_mainnav: #248A83;
 $color_navhover: #2f1339;
 $color_border: #a1a1a1;
+$color_footer-heading: #d99054;
 
 /* Typography */
-$font_main: 'Merriweather';
-$font_accent: 'Novecento';
+$font_basesize: 16px;
+$font_main: 'Merriweather', serif;
+$font_accent: 'Novecento', sans-serif;
+$base_line-height: 1.75rem;
+$footer_line-height: 2rem;

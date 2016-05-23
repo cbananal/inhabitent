@@ -48,6 +48,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*=======================================*/
 /* Colors */
 /* Typography */
+/*=======================================*/
+/*------ Inhabitent: Custom Styles ------*/
+/*=======================================*/
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -233,29 +236,29 @@ th {
 /* Merriweather */
 @font-face {
   font-family: 'Merriweather';
-  src: url("merriweather-bold-webfont.eot");
-  src: url("merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("merriweather-bold-webfont.woff2") format("woff2"), url("merriweather-bold-webfont.woff") format("woff"), url("merriweather-bold-webfont.ttf") format("truetype"), url("merriweather-bold-webfont.svg#merriweatherbold") format("svg");
+  src: url("../../fonts/merriweather-bold-webfont.eot");
+  src: url("../../fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../../fonts/merriweather-bold-webfont.woff") format("woff"), url("../../fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../../fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("merriweather-bolditalic-webfont.eot");
-  src: url("merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("merriweather-bolditalic-webfont.woff2") format("woff2"), url("merriweather-bolditalic-webfont.woff") format("woff"), url("merriweather-bolditalic-webfont.ttf") format("truetype"), url("merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
+  src: url("../../fonts/merriweather-bolditalic-webfont.eot");
+  src: url("../../fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/merriweather-bolditalic-webfont.woff") format("woff"), url("../../fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("../../fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("merriweather-light-webfont.eot");
-  src: url("merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("merriweather-light-webfont.woff2") format("woff2"), url("merriweather-light-webfont.woff") format("woff"), url("merriweather-light-webfont.ttf") format("truetype"), url("merriweather-light-webfont.svg#merriweatherlight") format("svg");
+  src: url("../../fonts/merriweather-light-webfont.eot");
+  src: url("../../fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-light-webfont.woff2") format("woff2"), url("../../fonts/merriweather-light-webfont.woff") format("woff"), url("../../fonts/merriweather-light-webfont.ttf") format("truetype"), url("../../fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("merriweather-lightitalic-webfont.eot");
-  src: url("merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("merriweather-lightitalic-webfont.woff2") format("woff2"), url("merriweather-lightitalic-webfont.woff") format("woff"), url("merriweather-lightitalic-webfont.ttf") format("truetype"), url("merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
+  src: url("../../fonts/merriweather-lightitalic-webfont.eot");
+  src: url("../../fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../../fonts/merriweather-lightitalic-webfont.woff") format("woff"), url("../../fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("../../fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
   font-weight: normal;
   font-style: italic; }
 
@@ -268,7 +271,7 @@ th {
 
 @font-face {
   font-family: 'Novecento';
-  src: url("Novecentosanswide-DemiBold.ttf") format("truetype");
+  src: url("../../fonts/Novecentosanswide-DemiBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
@@ -550,7 +553,7 @@ a {
   .main-navigation a {
     padding: 0 15px;
     color: #248A83;
-    font-family: "Novecento";
+    font-family: "Novecento", sans-serif;
     text-transform: uppercase; }
     .main-navigation a:hover {
       color: #2f1339; }
@@ -611,6 +614,9 @@ a {
   content: "";
   display: table; }
 
+/*=======================================*/
+/*------ Inhabitent: Custom Styles ------*/
+/*=======================================*/
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -756,3 +762,60 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center; }
+
+/*=======================================*/
+/*------ Inhabitent: Custom Styles ------*/
+/*=======================================*/
+.site-footer {
+  height: auto;
+  padding: 60px 0 10px;
+  color: #fff;
+  font-family: "Merriweather", serif;
+  background: url("../../images/dark-wood@2x.png") repeat-x;
+  background-size: contain; }
+
+.footer-container {
+  width: 1120px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  position: relative; }
+
+.site-footer h4 {
+  font-size: 20px;
+  color: #d99054;
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem; }
+
+.contact, .schedule {
+  margin-right: 100px;
+  line-height: 1rem; }
+
+.contact .footer-icon {
+  margin-right: 10px; }
+
+.contact a {
+  color: #fff;
+  text-decoration: none; }
+  .contact a:hover {
+    text-decoration: none; }
+
+.schedule .day {
+  font-weight: bold; }
+
+.site-footer img {
+  width: 280px;
+  height: 100px;
+  position: absolute;
+  right: 0; }
+
+.site-info {
+  width: 1120px;
+  margin: 0 auto;
+  padding-top: 40px;
+  font-family: "Novecento", sans-serif;
+  text-align: center;
+  text-transform: uppercase; }

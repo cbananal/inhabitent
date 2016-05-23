@@ -1,0 +1,64 @@
+/*=======================================*/
+/*------ Inhabitent: Custom Styles ------*/
+/*=======================================*/
+
+.site-footer {
+  height: auto;
+  padding: 60px 0 10px;
+  color: #fff;
+  font-family: $font_main;
+  background: url('../../images/dark-wood@2x.png') repeat-x;
+  background-size: contain;
+}
+
+.footer-container {
+  @include general-container;
+  // padding: 60px 0 70px;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.site-footer h4 {
+  font-size: 20px;
+  color: $color_footer-heading;
+  font-family: $font_accent;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.contact, .schedule {
+  margin-right: 100px;
+  line-height: 1rem;
+}
+
+.contact .footer-icon {
+  margin-right: 10px;
+}
+
+.contact a {
+  color: $color_text-link;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.schedule .day {
+  font-weight: bold;
+}
+
+.site-footer img {
+  width: 280px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+}
+
+.site-info {
+  @include general-container;
+  padding-top: 40px;
+  font-family: $font_accent;
+  text-align: center;
+  text-transform: uppercase;
+}
