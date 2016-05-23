@@ -14,8 +14,37 @@ get_header(); ?>
 				<img src="<?php bloginfo('template_url')?>/images/logos/inhabitent-logo-full.svg" alt ="Inhabitent Logo">
 			</section>
 			<!--end hero-container-->
-			<section class="shop-cta">
+			<section class="shop-container">
+				<h1>Shop Stuff</h1>
+				<div class="shop-cta">
+					<div class="do">
+						<img src="<?php bloginfo('template_url') ?>/images/product-type-icons/do.svg">
+						<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
+						<a href="#">Do Stuff</a>
+					</div>
+					<!--end do-->
+					<div class="eat">
+						<img src="<?php bloginfo('template_url') ?>/images/product-type-icons/eat.svg">
+						<p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
+						<a href="#">Eat Stuff</a>
+					</div>
+					<!--end eat-->
+					<div class="sleep">
+						<img src="<?php bloginfo('template_url') ?>/images/product-type-icons/sleep.svg">
+						<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
+						<a href="#">Sleep Stuff</a>
+					</div>
+					<!--end sleep-->
+					<div class="wear">
+						<img src="<?php bloginfo('template_url') ?>/images/product-type-icons/wear.svg">
+						<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
+						<a href="#">Wear Stuff</a>
+					</div>
+					<!--end wear-->
+				</div>
+				<!--end shop-categories-->
 			</section>
+			<!--end shop-call-to-action-->
 			<section class="featured-entries">
 			</section>
 			<section class="featured-adventures">

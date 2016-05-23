@@ -2,12 +2,11 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
-
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/
 /*=======================================*/
 
+/*------------ Front page ----------*/
 .site-header {
   width: 100vw;
   background-color:$color_background;
@@ -36,4 +35,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.home h1 {
+  font-size: 35px;
+  color: $color_heading;
+  font-weight: normal;
+  font-family: $font_accent;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.shop-container{
+  text-align: center;
+}
+
+.shop-cta {
+  @include general-container;
+  height: auto;
+  line-height: $base_line-height;
+  @include default-flex;
+  img {
+    width: 70px;
+  }
+  div {
+    width: 25%;
+    margin: 5px;
+    padding: 15px;
+    border: 1px solid $color_border;
+  }
+  a {
+    width: auto;
+    padding: 10px 20px;
+    color: $color_text-link;
+    background-color: $color_accent-background;
+    font-family: $font_accent;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 }

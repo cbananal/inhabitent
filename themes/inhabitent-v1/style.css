@@ -392,6 +392,13 @@ table {
   margin: 0 0 1.5em;
   width: 100%; }
 
+/*=======================================*/
+/*------ Inhabitent: Custom Styles ------*/
+/*=======================================*/
+body {
+  font-size: 16px;
+  font-family: "Merriweather", serif; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -731,10 +738,10 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/
 /*=======================================*/
+/*------------ Front page ----------*/
 .site-header {
   width: 100vw;
   background-color: #fff;
@@ -762,6 +769,42 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center; }
+
+.home h1 {
+  font-size: 35px;
+  color: #2f1339;
+  font-weight: normal;
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem; }
+
+.shop-container {
+  text-align: center; }
+
+.shop-cta {
+  width: 1120px;
+  margin: 0 auto;
+  height: auto;
+  line-height: 1.75rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .shop-cta img {
+    width: 70px; }
+  .shop-cta div {
+    width: 25%;
+    margin: 5px;
+    padding: 15px;
+    border: 1px solid #808080; }
+  .shop-cta a {
+    width: auto;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #248A83;
+    font-family: "Novecento", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase; }
 
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/

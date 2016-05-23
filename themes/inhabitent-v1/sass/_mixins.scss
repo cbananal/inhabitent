@@ -19,3 +19,8 @@
 	width: 1120px;
 	margin: 0 auto;
 }
+
+@mixin default-flex {
+	display: flex;
+	justify-content: center;
+}
