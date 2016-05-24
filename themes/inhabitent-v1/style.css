@@ -556,7 +556,6 @@ a {
   background-color: #fff;
   border-bottom: 1px solid #e1e1e1;
   position: fixed;
-  top: 0;
   opacity: 0.7; }
 
 .site-header h1 {
@@ -768,7 +767,14 @@ object {
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/
 /*=======================================*/
+/*------------ SHARED PAGES ----------*/
+.site-content {
+  padding-top: 45px; }
+
 /*------------ FRONT PAGE ----------*/
+.home .site-content {
+  padding-top: 0; }
+
 .hero-container {
   height: 100vh;
   margin-bottom: 50px;
@@ -867,7 +873,14 @@ object {
 /*------------ BLOG ----------*/
 .blog .site-content {
   width: 1120px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .blog .site-content .content-area {
+    width: 70%;
+    border-right: 1px solid #e1e1e1; }
 
 .entry-title {
   font-size: 2rem;

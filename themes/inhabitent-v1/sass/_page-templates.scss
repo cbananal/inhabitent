@@ -6,7 +6,16 @@
 /*------ Inhabitent: Custom Styles ------*/
 /*=======================================*/
 
+/*------------ SHARED PAGES ----------*/
+.site-content {
+  padding-top: 45px;
+}
+
 /*------------ FRONT PAGE ----------*/
+
+.home .site-content {
+  padding-top: 0;
+}
 
 .hero-container {
   height: 100vh;
@@ -116,6 +125,11 @@
 .blog {
   .site-content {
     @include general-container;
+    @include default-flex;
+  .content-area {
+    width: 70%;
+    border-right: 1px solid $color_border;
+  }
   }
 }
 
