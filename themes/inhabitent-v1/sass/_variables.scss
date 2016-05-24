@@ -34,6 +34,7 @@ $font__line-height-pre: 1.6;
 
 /*----- Colors: Descriptive -----*/
 
+$black: #000;
 $white: #fff;
 $green: #248A83;
 $violet: #2f1339;
@@ -55,6 +56,9 @@ $color_text-heading-footer: $orange;
 $color_link-main-nav-active: $green;
 $color_link-main-nav-hover: $violet;
 $color_link-featured-entries-title: $green;
+$color_link-featured-entries-title-hover: $violet;
+$color_link-featured-entries-cta: $black;
+$color_link-featured-entries-cta-hover: $white;
 $color_link-footer: $white;
 
 /* Border */
@@ -64,6 +68,7 @@ $color_border-shop-hover: $orange;
 /* Backgrounds */
 $color_bg-main-nav: $white;
 $color_bg-button: $green;
+$color_bg-featured-entries-cta: $black;
 
 
 /*--------- Typography ---------*/

@@ -76,7 +76,8 @@
   justify-content: space-between;
   div {
     width: 32%;
-    padding: 10px;
+    height: auto;
+    padding: 30px 10px;
     border: 1px solid $color_border;
     p {
       font-size: 12px;
@@ -90,7 +91,21 @@
       letter-spacing: 0.1rem;
       line-height: 1rem;
       &:hover {
-        color: red;
+        color: $color_link-featured-entries-title-hover;
+      }
+    }
+    > a {
+      padding: 10px 20px;
+      font-size: 14px;
+      color: $color_link-featured-entries-cta;
+      border: 1px solid $color_bg-featured-entries-cta;
+      font-family: $font_accent;
+      text-transform: uppercase;
+      text-decoration: none;
+      &:hover {
+        color: $color_link-featured-entries-cta-hover;
+        background-color: $color_bg-button;
+        border: 0;
       }
     }
   }
