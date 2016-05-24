@@ -43,6 +43,7 @@
   color: $color_heading;
   font-weight: normal;
   font-family: $font_accent;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
@@ -81,6 +82,37 @@
     text-transform: uppercase;
     &:hover {
       background-color: darken($color_accent-background, 10%);
+    }
+  }
+}
+
+/*------------ Front Page: Featured Entries ----------*/
+.entries-container {
+  @include general-container;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-between;
+  div {
+    width: 32%;
+    padding: 10px;
+    border: 1px solid $color_border;
+    p {
+      font-size: 12px;
+    }
+    .title {
+      color: $color_mainnav;
+      font-size: 1.4rem;
+      font-family: $font_accent;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      line-height: 1rem;
+      &:hover {
+        color: red;
+      }
+    }
+    .entries-cta {
+      color: $color_entries-cta;
     }
   }
 }

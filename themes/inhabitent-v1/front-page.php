@@ -46,6 +46,28 @@ get_header(); ?>
 			</section>
 			<!--end shop-call-to-action-->
 			<section class="featured-entries">
+				<h1>Inhabitent Journal</h1>
+				<div class="entries-container">
+					<div class="entry-one">
+						<img src="">
+						<p>Date</p>
+						<h4> <a class="title" href="#">Van Camping Photo Contest</a></h4>
+						<a href="#">Read Entry</a>
+					</div>
+					<div class="entry-two">
+						<img src="">
+						<p>Date</p>
+						<h4><a class="title" href="#">Fireside Libations: 3 Warm Cocktail Recipes</a></h4>
+						<a href="#">Read Entry</a>
+					</div>
+					<div class="entry-three">
+						<img src="">
+						<p>Date</p>
+						<h4><a class="title" href="#">How To: Eating Healthy Meals in the Wild</a></h4>
+						<a href="#">Read Entry</a>
+					</div>
+				</div>
+				<!--end entries-container-->
 			</section>
 			<section class="featured-adventures">
 			</section>

@@ -46,7 +46,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/
 /*=======================================*/
-/* Colors */
+/* Colors*/
 /* Typography */
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/
@@ -776,6 +776,7 @@ object {
   color: #2f1339;
   font-weight: normal;
   font-family: "Novecento", sans-serif;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2rem; }
 
@@ -813,6 +814,34 @@ object {
     text-transform: uppercase; }
     .shop-cta a:hover {
       background-color: #19625d; }
+
+/*------------ Front Page: Featured Entries ----------*/
+.entries-container {
+  width: 1120px;
+  margin: 0 auto;
+  margin: 60px auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .entries-container div {
+    width: 32%;
+    padding: 10px;
+    border: 1px solid #e1e1e1; }
+    .entries-container div p {
+      font-size: 12px; }
+    .entries-container div .title {
+      color: #248A83;
+      font-size: 1.4rem;
+      font-family: "Novecento", sans-serif;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      line-height: 1rem; }
+      .entries-container div .title:hover {
+        color: red; }
+    .entries-container div .entries-cta {
+      color: #000; }
 
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/
