@@ -28,6 +28,7 @@
 
 .hero-container {
   height: 100vh;
+  margin-bottom: 50px;
   background:
   linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
     url("../../images/hero-images/home-hero.jpg") no-repeat;
@@ -46,8 +47,9 @@
   letter-spacing: 0.2rem;
 }
 
-.shop-container{
+.shop-container {
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .shop-cta {
@@ -61,8 +63,13 @@
   div {
     width: 25%;
     margin: 5px;
-    padding: 15px;
-    border: 1px solid $color_border;
+    padding: 25px 15px;
+    border-top-width: 2px;
+    border: 1px $color_border solid;
+    border-top-width: thick;
+    &:hover {
+      border-color: $color_shop-border;
+    }
   }
   a {
     width: auto;
@@ -72,5 +79,8 @@
     font-family: $font_accent;
     text-decoration: none;
     text-transform: uppercase;
+    &:hover {
+      background-color: darken($color_accent-background, 10%);
+    }
   }
 }

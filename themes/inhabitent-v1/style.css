@@ -761,6 +761,7 @@ object {
 
 .hero-container {
   height: 100vh;
+  margin-bottom: 50px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/hero-images/home-hero.jpg") no-repeat;
   background-size: cover;
   display: -ms-flexbox;
@@ -779,7 +780,8 @@ object {
   letter-spacing: 0.2rem; }
 
 .shop-container {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 60px; }
 
 .shop-cta {
   width: 1120px;
@@ -795,8 +797,12 @@ object {
   .shop-cta div {
     width: 25%;
     margin: 5px;
-    padding: 15px;
-    border: 1px solid #e1e1e1; }
+    padding: 25px 15px;
+    border-top-width: 2px;
+    border: 1px #e1e1e1 solid;
+    border-top-width: thick; }
+    .shop-cta div:hover {
+      border-color: #d99054; }
   .shop-cta a {
     width: auto;
     padding: 10px 20px;
@@ -805,6 +811,8 @@ object {
     font-family: "Novecento", sans-serif;
     text-decoration: none;
     text-transform: uppercase; }
+    .shop-cta a:hover {
+      background-color: #19625d; }
 
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/
