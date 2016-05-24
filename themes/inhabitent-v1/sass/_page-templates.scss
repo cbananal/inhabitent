@@ -22,7 +22,7 @@
 
 .home h1 {
   font-size: 35px;
-  color: $color_heading;
+  color: $color_text-heading;
   font-weight: normal;
   font-family: $font_accent;
   text-align: center;
@@ -51,19 +51,19 @@
     border: 1px $color_border solid;
     border-top-width: thick;
     &:hover {
-      border-color: $color_shop-border;
+      border-color: $color_border-shop-hover;
     }
   }
   a {
     width: auto;
     padding: 10px 20px;
-    color: $color_text-link;
-    background-color: $color_accent-background;
+    color: $color_text-button;
+    background-color: $color_bg-button;
     font-family: $font_accent;
     text-decoration: none;
     text-transform: uppercase;
     &:hover {
-      background-color: darken($color_accent-background, 10%);
+      background-color: darken($color_bg-button, 10%);
     }
   }
 }
@@ -82,7 +82,7 @@
       font-size: 12px;
     }
     .title {
-      color: $color_mainnav;
+      color: $color_link-featured-entries-title;
       font-size: 1.4rem;
       font-family: $font_accent;
       text-decoration: none;
@@ -92,9 +92,6 @@
       &:hover {
         color: red;
       }
-    }
-    .entries-cta {
-      color: $color_entries-cta;
     }
   }
 }

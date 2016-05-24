@@ -13,7 +13,6 @@
 
 .footer-container {
   @include general-container;
-  // padding: 60px 0 70px;
   display: flex;
   justify-content: flex-start;
   position: relative;
@@ -21,7 +20,7 @@
 
 .site-footer h4 {
   font-size: 20px;
-  color: $color_footer-heading;
+  color: $color_text-heading-footer;
   font-family: $font_accent;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -37,7 +36,7 @@
 }
 
 .contact a {
-  color: $color_text-link;
+  color: $color_link-footer;
   text-decoration: none;
   &:hover {
     text-decoration: none;

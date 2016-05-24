@@ -46,8 +46,16 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/
 /*=======================================*/
-/* Colors*/
-/* Typography */
+/*----- Colors: Descriptive -----*/
+/*----- Colors: Functional -----*/
+/* Plain Text */
+/* Text Links */
+/* Border */
+/* Backgrounds */
+/*--------- Typography ---------*/
+/* Font Sizes */
+/* Fonts */
+/* Line Heights */
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/
 /*=======================================*/
@@ -542,6 +550,24 @@ a {
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/
 /*=======================================*/
+/*------------ Main Nav ----------*/
+.site-header {
+  width: 100vw;
+  background-color: #fff;
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  opacity: 0.7; }
+
+.site-header h1 {
+  width: 50px;
+  height: 35px;
+  margin: 0;
+  background: url("../../images/logos/inhabitent-logo-tent.svg") no-repeat;
+  background-size: 50px 35px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap; }
+
 .main-nav-container {
   width: 1120px;
   margin: 0px auto;
@@ -741,24 +767,7 @@ object {
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/
 /*=======================================*/
-/*------------ Front page ----------*/
-.site-header {
-  width: 100vw;
-  background-color: #fff;
-  border-bottom: 1px solid #e1e1e1;
-  position: fixed;
-  opacity: 0.7; }
-
-.site-header h1 {
-  width: 50px;
-  height: 35px;
-  margin: 0;
-  background: url("../../images/logos/inhabitent-logo-tent.svg") no-repeat;
-  background-size: 50px 35px;
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap; }
-
+/*------------ Front Page ----------*/
 .hero-container {
   height: 100vh;
   margin-bottom: 50px;
@@ -840,8 +849,6 @@ object {
       line-height: 1rem; }
       .entries-container div .title:hover {
         color: red; }
-    .entries-container div .entries-cta {
-      color: #000; }
 
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/

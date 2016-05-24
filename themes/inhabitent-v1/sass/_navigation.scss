@@ -138,7 +138,7 @@ a {
 /*------------ Main Nav ----------*/
 .site-header {
   width: 100vw;
-  background-color:$color_background;
+  background-color:$color_bg-main-nav;
   border-bottom: 1px solid $color_border;
   position: fixed;
   opacity: 0.7;
@@ -168,11 +168,11 @@ a {
 	width: auto;
   a{
     padding: 0 15px;
-    color: $color_mainnav;
+    color: $color_link-main-nav-active;
     font-family: $font_accent;
     text-transform: uppercase;
     &:hover {
-      color: $color_navhover;
+      color: $color_link-main-nav-hover;
     }
   }
   align-self: center;

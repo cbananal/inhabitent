@@ -32,22 +32,48 @@ $font__line-height-pre: 1.6;
 /*------ Inhabitent: Custom Styles ------*/
 /*=======================================*/
 
-/* Colors*/
-$color_background: #fff;
-$color_text: #404040;
-$color_text-link: #fff;
-$color_mainnav: #248A83;
-$color_accent-background: #248A83;
-$color_navhover: #2f1339;
-$color_heading: #2f1339;
-$color_border: #e1e1e1;
-$color_shop-border: #d99054;
-$color_entries-cta: #000;
-$color_footer-heading: #d99054;
+/*----- Colors: Descriptive -----*/
 
-/* Typography */
-$font_base-size: 16px;
+$white: #fff;
+$green: #248A83;
+$violet: #2f1339;
+$orange: #d99054;
+$yellow: #f0e4d1;
+$light-gray: #e1e1e1;
+$medium-gray: #808080;
+$dark-gray: #404040;
+
+/*----- Colors: Functional -----*/
+
+/* Plain Text */
+$color_text-default: $dark-gray;
+$color_text-heading: $violet;
+$color_text-button: $white;
+$color_text-heading-footer: $orange;
+
+/* Text Links */
+$color_link-main-nav-active: $green;
+$color_link-main-nav-hover: $violet;
+$color_link-featured-entries-title: $green;
+$color_link-footer: $white;
+
+/* Border */
+$color_border: $light-gray;
+$color_border-shop-hover: $orange;
+
+/* Backgrounds */
+$color_bg-main-nav: $white;
+$color_bg-button: $green;
+
+
+/*--------- Typography ---------*/
+/* Font Sizes */
+$font_default-size: 16px;
+
+/* Fonts */
 $font_main: 'Merriweather', serif;
 $font_accent: 'Novecento', sans-serif;
+
+/* Line Heights */
 $base_line-height: 1.75rem;
 $footer_line-height: 2rem;
