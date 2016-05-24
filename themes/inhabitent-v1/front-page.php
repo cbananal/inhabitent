@@ -69,7 +69,13 @@ get_header(); ?>
 				</div>
 				<!--end entries-container-->
 			</section>
+			<!--end featured-entries-->
 			<section class="featured-adventures">
+				<h1>Latest Adventures</h1>
+				<div class="adventures-container">
+				</div>
+				<!--end adventures-container-->
+				<a href="#">More Adventures</a>
 			</section>
 
 		</main><!-- #main -->

@@ -6,7 +6,7 @@
 /*------ Inhabitent: Custom Styles ------*/
 /*=======================================*/
 
-/*------------ Front Page ----------*/
+/*------------ FRONT PAGE ----------*/
 
 .hero-container {
   height: 100vh;
@@ -107,6 +107,30 @@
         background-color: $color_bg-button;
         border: 0;
       }
+    }
+  }
+}
+
+/*------------ BLOG ----------*/
+
+.blog {
+  .site-content {
+    @include general-container;
+  }
+}
+
+.entry-title {
+  font-size: 2rem;
+  font-family: $font_accent;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  a {
+    padding: 10px;
+    color: $color_link-entry-title;
+    background-color: $color_bg-entry-title;
+    text-decoration: none;
+    &:hover {
+      color: $color_link-entry-title-hover;
     }
   }
 }
