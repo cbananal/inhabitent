@@ -745,7 +745,7 @@ object {
 .site-header {
   width: 100vw;
   background-color: #fff;
-  border-bottom: 1px solid #a1a1a1;
+  border-bottom: 1px solid #e1e1e1;
   position: fixed;
   opacity: 0.7; }
 
@@ -796,7 +796,7 @@ object {
     width: 25%;
     margin: 5px;
     padding: 15px;
-    border: 1px solid #808080; }
+    border: 1px solid #e1e1e1; }
   .shop-cta a {
     width: auto;
     padding: 10px 20px;
