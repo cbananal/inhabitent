@@ -32,8 +32,8 @@ function inhabitent_custom_login() {
 	echo '<link rel="stylesheet" type="text/css" href=" ' .
 	get_bloginfo('stylesheet_directory') . '/build/css/customlogin.css" />';
 	}
-
 	add_action ('login_head', 'inhabitent_custom_login');
+
 
 //Change Link of Logo on Login Screen
 //The function below is an easier/simpler way than the one on Codex for login_head,
@@ -44,12 +44,13 @@ function inhabitent_login_link( $url ){
 }
 add_filter( 'login_headerurl', 'inhabitent_login_link' );
 
+
 //Change Logo Title on Login Screen
 function inhabitent_logo_title () {
 	return 'View Site';
 }
-
 add_filter ('login_headertitle', 'inhabitent_logo_title');
+
 
 // Remove "Editor" links from sub-menus
 function inhabitent_remove_submenus() {
@@ -57,3 +58,34 @@ function inhabitent_remove_submenus() {
     remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
 }
 add_action( 'admin_init', 'inhabitent_remove_submenus', 102 );
+
+
+//Add Background Image on About
+function inhabitent_about_bg() {
+			// if (!is_page_template (about.php)) {
+			// 	return;
+			// }
+
+      $custom_css =
+        ".entry-header {
+                       background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+											 url('". CFS()->get('background_image') ."') no-repeat center bottom;
+                       background-size: cover, cover;
+                       height: 100vh;
+										 }";
+       wp_add_inline_style( 'inhabitent-style', $custom_css );
+}
+add_action( 'wp_enqueue_scripts', 'inhabitent_about_bg' );
+
+
+// Product Archive Page: Sorts Posts and Changes No. of Posts Displayed
+// function inhabitent_filter_product_query() {
+//
+// 	if ( is_post_type_archive() && !is_admin() && $query->is_main_query() ) {
+// 		$query->set('orderby', 'title');
+// 		$query->set('order', 'ASC');
+// 		$query->set('post_per_page', 16)
+// 	}
+//
+// }
+// add_action( 'pre_get_posts', 'inhabitent_filter_product_query');
