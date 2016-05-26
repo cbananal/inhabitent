@@ -14,41 +14,80 @@ get_header(); ?>
 				<img src="<?php bloginfo('template_url')?>/images/logos/inhabitent-logo-full.svg" alt ="Inhabitent Logo">
 			</section>
 			<!--end hero-container-->
+
+			<?php $terms = get_terms('product-type'); ?>
+			<?php if ( !empty($terms) && !is_wp_error($terms) ) : ?>
 			<section class="shop-container">
 				<h1>Shop Stuff</h1>
 				<div class="shop-cta">
-					<div class="do">
+					<?php foreach ($terms as $term) : ?>
+						<div>
+							<img src="<?php echo get_template_directory_uri() ?>/images/product-type-icons/<?php echo $term->name ?>.svg">
+							<p><?php echo $term->description ?></p>
+							<a href="<?php echo get_post_type_archive_link('product-type') ?>/inhabitent/product-type/<?php echo $term->slug?>"><?php echo $term->name?> Stuff</a>
+						</div>
+					<?php endforeach; ?>
+				</div>
+				<!--end shop-cta-->
+		</section>
+		<!--end section shop-container-->
+		<?php endif; ?>
+
+					<!--JS Version -->
+					<?php
+						// $terms = get_terms('product-type');
+						// if ( !empty($terms) && !is_wp_error($terms) ) {
+						// 		foreach ($terms as $term) {
+						// 			echo '<div><img src="' . get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg"/><p>' . $term->description . '</p>' .
+						// 			'<a href="#">' .	$term->name . ' stuff' . '</a></div>';
+						// 		} //end foreach
+						// }
+					?>
+
+					<!--STATIC HTML BELOW-->
+					<!-- <div class="do">
 						<img src="<?php bloginfo('template_url') ?>/images/product-type-icons/do.svg">
 						<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
 						<a href="#">Do Stuff</a>
-					</div>
+					</div> -->
 					<!--end do-->
-					<div class="eat">
+					<!-- <div class="eat">
 						<img src="<?php bloginfo('template_url') ?>/images/product-type-icons/eat.svg">
 						<p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
 						<a href="#">Eat Stuff</a>
-					</div>
+					</div> -->
 					<!--end eat-->
-					<div class="sleep">
+					<!-- <div class="sleep">
 						<img src="<?php bloginfo('template_url') ?>/images/product-type-icons/sleep.svg">
 						<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
 						<a href="#">Sleep Stuff</a>
-					</div>
+					</div> -->
 					<!--end sleep-->
-					<div class="wear">
+					<!-- <div class="wear">
 						<img src="<?php bloginfo('template_url') ?>/images/product-type-icons/wear.svg">
 						<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
 						<a href="#">Wear Stuff</a>
-					</div>
+					</div> -->
 					<!--end wear-->
-				</div>
-				<!--end shop-categories-->
-			</section>
-			<!--end shop-call-to-action-->
+
 			<section class="featured-entries">
 				<h1>Inhabitent Journal</h1>
 				<div class="entries-container">
-					<div class="entry-one">
+
+					<?php
+					   $args = array( 'post_type' => 'post', 'posts_per_page' => 3 );
+					   $journal_posts = get_posts( $args ); // returns an array of posts
+					?>
+					<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
+					   <?php //Content from your array of posts go here.
+							the_post_thumbnail();
+							the_date();
+						 	the_title();
+							comments_number();
+					?>
+					<?php endforeach; wp_reset_postdata(); ?>
+
+					<!-- <div class="entry-one">
 						<img src="">
 						<p>16 April 2016 / 3 comments</p>
 						<h4> <a class="title" href="#">Van Camping Photo Contest</a></h4>
@@ -65,7 +104,7 @@ get_header(); ?>
 						<p>31 March 2016 / 0 Comments</p>
 						<h4><a class="title" href="#">How To: Eating Healthy Meals in the Wild</a></h4>
 						<a href="#">Read Entry</a>
-					</div>
+					</div> -->
 				</div>
 				<!--end entries-container-->
 			</section>

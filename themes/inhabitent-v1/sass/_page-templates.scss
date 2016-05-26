@@ -48,24 +48,34 @@
   @include general-container;
   height: auto;
   line-height: $base_line-height;
-  @include default-flex;
+  display: flex;
+  justify-content: space-between;
   img {
     width: 70px;
   }
   div {
     width: 25%;
     margin: 5px;
-    padding: 25px 15px;
+    padding: 25px 15px 10px;
     border-top-width: 2px;
     border: 1px $color_border solid;
     border-top-width: thick;
     &:hover {
       border-color: $color_border-shop-hover;
     }
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
   }
   a {
     width: auto;
-    padding: 10px 20px;
+    margin-bottom: 20px;
+    padding: 5px 24px;
+    display: inline-block;
+    font-size: 0.9rem;
     color: $color_text-button;
     background-color: $color_bg-button;
     font-family: $font_accent;
@@ -129,6 +139,9 @@
   .content-area {
     width: 70%;
     border-right: 1px solid $color_border;
+  }
+  .widget-area {
+    width: 30%;
   }
   }
 }

@@ -807,22 +807,29 @@ object {
   line-height: 1.75rem;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
   .shop-cta img {
     width: 70px; }
   .shop-cta div {
     width: 25%;
     margin: 5px;
-    padding: 25px 15px;
+    padding: 25px 15px 10px;
     border-top-width: 2px;
     border: 1px #e1e1e1 solid;
     border-top-width: thick; }
     .shop-cta div:hover {
       border-color: #d99054; }
+    .shop-cta div:first-child {
+      margin-left: 0; }
+    .shop-cta div:last-child {
+      margin-right: 0; }
   .shop-cta a {
     width: auto;
-    padding: 10px 20px;
+    margin-bottom: 20px;
+    padding: 5px 24px;
+    display: inline-block;
+    font-size: 0.9rem;
     color: #fff;
     background-color: #248A83;
     font-family: "Novecento", sans-serif;
@@ -881,6 +888,8 @@ object {
   .blog .site-content .content-area {
     width: 70%;
     border-right: 1px solid #e1e1e1; }
+  .blog .site-content .widget-area {
+    width: 30%; }
 
 .entry-title {
   font-size: 2rem;
