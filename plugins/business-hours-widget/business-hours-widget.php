@@ -97,7 +97,9 @@ class Inhabitent_Hours extends WP_Widget {
 
 		// Manipulate the widget's values based on their input fields
 		$title = empty( $instance['title'] ) ? '' : apply_filters( 'widget_title', $instance['title'] );
-		// TODO: other fields go here...
+		$monday_friday = empty( $instance['monday_friday'] ) ? '' : apply_filters( 'widget_mon_fri', $instance['monday_friday'] );
+		$saturday = empty( $instance['saturday'] ) ? '' : apply_filters( 'widget_saturday', $instance['saturday'] );
+		$sunday = empty( $instance['sunday'] ) ? '' : apply_filters( 'widget_sunday', $instance['sunday'] );
 
 		ob_start();
 
@@ -118,7 +120,7 @@ class Inhabitent_Hours extends WP_Widget {
 	/**
 	 * Processes the widget's options to be saved.
 	 *
-	 * @param array $new_instance The new instance of values to be generated via the update.
+	 * @param array $new_instance The new instance of values to be generated via the .
 	 * @param array $old_instance The previous instance of values before the update.
 	 */
 	public function update( $new_instance, $old_instance ) {
@@ -126,6 +128,9 @@ class Inhabitent_Hours extends WP_Widget {
 		$instance = $old_instance;
 
 		$instance['title'] = strip_tags( $new_instance['title'] );
+		$instance['monday_friday'] = strip_tags( $new_instance['monday_friday'] );
+		$instance['saturday'] = strip_tags( $new_instance['saturday'] );
+		$instance['sunday'] = strip_tags( $new_instance['sunday'] );
 		// TODO: Here is where you update the rest of your widget's old values with the new, incoming values
 
 		return $instance;
@@ -143,11 +148,17 @@ class Inhabitent_Hours extends WP_Widget {
 		$instance = wp_parse_args(
 			(array) $instance,
 			array(
-				'title' => 'My Widget Title',
+				'title' => 'Business Hours',
+				'monday_friday' => '',
+				'saturday' => '',
+				'sunday' => '',
 			)
 		);
 
 		$title = strip_tags( $instance['title'] );
+		$monday_friday = strip_tags( $instance['monday_friday'] );
+		$saturday = strip_tags( $instance['saturday'] );
+		$sunday = strip_tags( $instance['sunday'] );
 		// TODO: Store the rest of values of the widget in their own variables
 
 		// Display the admin form
