@@ -847,35 +847,38 @@ object {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between; }
-  .entries-container div {
+  .entries-container .entry-box {
     width: 32%;
     height: auto;
-    padding: 30px 10px;
     border: 1px solid #e1e1e1; }
-    .entries-container div p {
-      font-size: 12px; }
-    .entries-container div .title {
-      color: #248A83;
-      font-size: 1.4rem;
-      font-family: "Novecento", sans-serif;
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 0.1rem;
-      line-height: 1rem; }
-      .entries-container div .title:hover {
-        color: #2f1339; }
-    .entries-container div > a {
-      padding: 10px 20px;
-      font-size: 14px;
-      color: #000;
-      border: 1px solid #000;
-      font-family: "Novecento", sans-serif;
-      text-transform: uppercase;
-      text-decoration: none; }
-      .entries-container div > a:hover {
-        color: #fff;
-        background-color: #248A83;
-        border: 0; }
+    .entries-container .entry-box .entry-thumbnail {
+      width: 100%;
+      background-color: #e1e1e1; }
+    .entries-container .entry-box .entry-info {
+      padding: 25px 15px;
+      font-size: 0.7rem; }
+      .entries-container .entry-box .entry-info h4 a {
+        color: #248A83;
+        font-size: 1.3rem;
+        font-family: "Novecento", sans-serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        line-height: 1.6rem; }
+        .entries-container .entry-box .entry-info h4 a:hover {
+          color: #2f1339; }
+      .entries-container .entry-box .entry-info > a {
+        padding: 10px 20px;
+        font-size: 14px;
+        color: #000;
+        font-family: "Novecento", sans-serif;
+        border: 1px solid #000;
+        text-transform: uppercase;
+        text-decoration: none; }
+        .entries-container .entry-box .entry-info > a:hover {
+          color: #fff;
+          background-color: #248A83;
+          border: 0; }
 
 /*------------ BLOG ----------*/
 .blog .site-content {
