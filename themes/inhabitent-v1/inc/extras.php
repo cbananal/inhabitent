@@ -62,9 +62,9 @@ add_action( 'admin_init', 'inhabitent_remove_submenus', 102 );
 
 //Add Background Image on About
 function inhabitent_about_bg() {
-			// if (!is_page_template (about.php)) {
-			// 	return;
-			// }
+			if (!is_page_template ('about.php')) {
+				return;
+			}
 
       $custom_css =
         ".entry-header {
