@@ -909,6 +909,26 @@ object {
     color: #248A83;
     text-decoration: none; }
 
+.product-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.product-items {
+  width: 23%;
+  margin: 15px 5px;
+  padding: 0;
+  border: 1px solid grey;
+  -ms-flex-align: space-around;
+      -ms-grid-row-align: space-around;
+      align-items: space-around; }
+  .product-items img {
+    width: 100%;
+    max-height: auto; }
+
 /*------------ BLOG ----------*/
 .blog .site-content {
   width: 1120px;

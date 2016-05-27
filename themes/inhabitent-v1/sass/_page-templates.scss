@@ -178,6 +178,25 @@
   }
 }
 
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product-items {
+  width: 23%;
+  margin: 15px 5px;
+  padding: 0;
+  border: 1px solid grey;
+  img {
+    width: 100%;
+    max-height: auto;
+  }
+  align-items: space-around;
+  
+}
+
 
 /*------------ BLOG ----------*/
 

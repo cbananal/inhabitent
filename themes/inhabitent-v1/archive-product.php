@@ -27,17 +27,19 @@ get_header(); ?>
                             'posts_per_page' => 16 );
              $product_post = get_posts( $args ); // returns an array of posts
           ?>
-          <div class="product-items">
           <?php foreach ($product_post as $post) : setup_postdata ($post); ?>
-            <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail() ?></a>
-            <p><?php the_title() ?></p>
-            <p><?php echo CFS()->get( 'price' ); ?></p>
+						<div class="product-items">
+	            <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail() ?></a>
+	            <p><?php the_title() ?></p>
+	            <p><?php echo CFS()->get( 'price' ); ?></p>
+						</div>
+						<!--end product-items-->
           <?php endforeach; wp_reset_postdata(); ?>
-          </div>
-          <!--end product-items-->
+
         </div>
         <!--end product list-->
       </div>
+			<!--end product-page container-->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
