@@ -80,13 +80,13 @@ get_header(); ?>
 					    <!-- //Content from your array of posts go here. -->
 							<div class="entry-box">
 								<div class="entry-thumbnail">
-									<?php echo the_post_thumbnail() ?>
+									<?php the_post_thumbnail(); ?>
 								</div>
 								<!--end entry-thumbnail-->
 								<div class="entry-info"
-									<p><?php echo the_date('j F Y') ?> / <?php echo comments_number() ?></p>
-									<h4><a href="#"><?php echo the_title() ?></a></h4>
-									<a href="#">Read Entry</a>
+									<p><?php the_date('j F Y') ?> / <?php echo comments_number(); ?></p>
+									<h4><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
+									<a href="<?php echo get_permalink(); ?>">Read Entry</a>
 								</div>
 								<!--end entry-info-->
 							</div>
