@@ -6,16 +6,29 @@
 /*------ Inhabitent: Custom Styles ------*/
 /*=======================================*/
 
-/*------------ SHARED PAGES ----------*/
+
+/*------- All Pages: Shared Styles -----*/
 .site-content {
   padding-top: 45px;
 }
 
-/*------------ FRONT PAGE ----------*/
+/*------ Front Page: Shared Styles -----*/
 
 .home .site-content {
   padding-top: 0;
 }
+
+.home h1 {
+  font-size: 35px;
+  color: $color_text-heading;
+  font-weight: normal;
+  font-family: $font_accent;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+/*------------ Front Page: Hero ----------*/
 
 .hero-container {
   height: 100vh;
@@ -29,15 +42,7 @@
   align-items: center;
 }
 
-.home h1 {
-  font-size: 35px;
-  color: $color_text-heading;
-  font-weight: normal;
-  font-family: $font_accent;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-}
+/*------- Front Page: Featured Entries -----*/
 
 .shop-container {
   text-align: center;
@@ -87,7 +92,8 @@
   }
 }
 
-/*------------ Front Page: Featured Entries ----------*/
+/*------- Front Page: Featured Entries -----*/
+
 .entries-container {
   @include general-container;
   margin: 60px auto;
@@ -97,14 +103,15 @@
     width: 32%;
     height: auto;
     border: 1px solid $color_border;
-    .entry-thumbnail {
+    img {
       width: 100%;
-      max-height: 600px;
-      background-color: $color_border;
+      max-height: 238px;
+      border-bottom: 6px solid $color_border;
     }
     .entry-info {
-      padding: 25px 15px;
+      padding: 25px 15px 2px;
       font-size: 0.7rem;
+      line-height: 0;
       h4 {
         a {
           color: $color_link-featured-entries-title;
@@ -121,12 +128,13 @@
       }
       > a {
         padding: 10px 20px;
-        font-size: 14px;
+        font-size: 0.9rem;
         color: $color_link-featured-entries-cta;
         font-family: $font_accent;
         border: 1px solid $color_bg-featured-entries-cta;
         text-transform: uppercase;
         text-decoration: none;
+        line-height: 4rem;
         &:hover {
           color: $color_link-featured-entries-cta-hover;
           background-color: $color_bg-button;
