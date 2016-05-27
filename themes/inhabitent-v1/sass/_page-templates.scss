@@ -12,6 +12,7 @@
   padding-top: 45px;
 }
 
+
 /*------ Front Page: Shared Styles -----*/
 
 .home .site-content {
@@ -28,6 +29,7 @@
   letter-spacing: 0.2rem;
 }
 
+
 /*------------ Front Page: Hero ----------*/
 
 .hero-container {
@@ -41,6 +43,7 @@
   justify-content: center;
   align-items: center;
 }
+
 
 /*------- Front Page: Featured Entries -----*/
 
@@ -91,6 +94,7 @@
     }
   }
 }
+
 
 /*------- Front Page: Featured Entries -----*/
 
@@ -145,6 +149,36 @@
   } //end entry-box
 } //end entries-container
 
+
+/*------- Shop: Products Archive -----*/
+
+.product-page-container {
+  @include general-container;
+  margin: 40px auto;
+  text-align: center;
+  h1 {
+    font-size: 2.5rem;
+    font-family: $font_accent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+.tax-links {
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+  font-size: 1.2rem;
+  font-family: $font_accent;
+  text-transform: uppercase;
+  border-bottom: 1px dashed grey;
+  a {
+    margin: 20px;
+    color: $color_tax-nav;
+    text-decoration: none;
+  }
+}
+
+
 /*------------ BLOG ----------*/
 
 .blog {
@@ -178,10 +212,3 @@
 }
 
 /*------------ ABOUT ----------*/
-
-/*------------ ARCHIVE - PRODUCT PAGE ----------*/
-.product-page-container {
-  @include general-container;
-  margin: 0 auto;
-  text-align: center;
-}

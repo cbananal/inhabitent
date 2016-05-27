@@ -885,6 +885,30 @@ object {
           background-color: #248A83;
           border: 0; }
 
+/*------- Shop: Products Archive -----*/
+.product-page-container {
+  width: 1120px;
+  margin: 0 auto;
+  margin: 40px auto;
+  text-align: center; }
+  .product-page-container h1 {
+    font-size: 2.5rem;
+    font-family: "Novecento", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+
+.tax-links {
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+  font-size: 1.2rem;
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase;
+  border-bottom: 1px dashed grey; }
+  .tax-links a {
+    margin: 20px;
+    color: #248A83;
+    text-decoration: none; }
+
 /*------------ BLOG ----------*/
 .blog .site-content {
   width: 1120px;
@@ -913,13 +937,6 @@ object {
       color: #f0e4d1; }
 
 /*------------ ABOUT ----------*/
-/*------------ ARCHIVE - PRODUCT PAGE ----------*/
-.product-page-container {
-  width: 1120px;
-  margin: 0 auto;
-  margin: 0 auto;
-  text-align: center; }
-
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/
 /*=======================================*/

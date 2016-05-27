@@ -14,11 +14,12 @@ get_header(); ?>
       <?php if ( !empty($terms) && !is_wp_error($terms) ) : ?>
       <div class="product-page-container">
         <h1>Shop Stuff</h1>
-        <div>
+        <div class="tax-links">
           <?php foreach ($terms as $term) : ?>
             <a href="<?php echo get_term_link($term, 'product-type') ?>"><?php echo $term->name?></a>
           <?php endforeach; wp_reset_postdata(); ?>
         </div>
+				<!--end tax-links-->
       <?php endif; ?>
         <div class="product-list">
           <?php
