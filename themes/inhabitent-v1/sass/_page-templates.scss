@@ -99,13 +99,13 @@
     border: 1px solid $color_border;
     .entry-thumbnail {
       width: 100%;
+      max-height: 600px;
       background-color: $color_border;
     }
     .entry-info {
       padding: 25px 15px;
       font-size: 0.7rem;
       h4 {
-        // margin: -10px auto 40px;
         a {
           color: $color_link-featured-entries-title;
           font-size: 1.3rem;
@@ -172,7 +172,7 @@
 /*------------ ABOUT ----------*/
 
 /*------------ ARCHIVE - PRODUCT PAGE ----------*/
-.product-container {
+.product-page-container {
   @include general-container;
   margin: 0 auto;
   text-align: center;
