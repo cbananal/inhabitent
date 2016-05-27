@@ -188,27 +188,39 @@
   width: 23%;
   margin: 15px 5px;
   border: 1px solid $color_border;
-  line-height: 0.5rem;
-  p {
-    margin: 20px 15px;
+  line-height: 3.5rem;
+  .product-photo {
+    width: auto;
+    height: 250px;
+    position:relative;
+    overflow: hidden;
+      img {
+        max-height: 250px;
+        max-width: none; //expands the photo
+        width: auto; //keeps the ratio by stopping it from expanding/stretching all the way
+        position: absolute;
+        transform: translate(-50%,-50%); //centers photo
+        top: 50%; //percentage value is used because not all photos are of the same size. 50% would always target the middle
+        left: 50%;
+        border-bottom: 6px solid $color_border;
+      }
   }
-}
-
-.product-photo {
-  width: auto;
-  height: 250px;
-  position:relative;
-  overflow: hidden;
-    img {
-      max-height: 250px;
-      max-width: none; //expands the photo
-      width: auto; //keeps the ratio by stopping it from expanding/stretching all the way
-      position: absolute;
-      transform: translate(-50%,-50%); //centers photo
-      top: 50%; //percentage value is used because not all photos are of the same size. 50% would always target the middle
-      left: 50%;
-      border-bottom: 6px solid $color_border;
+  .product-title{
+    padding: 10px;
+    display:inline;
+    background:#fff;
+    &:before {
+      width:0;
+      float:left;
+      white-space:nowrap;
+      content:'.......................................................'
     }
+  }
+  .product-price {
+    padding: 0 10px;
+    float: right;
+    background:#fff;
+  }
 }
 
 
