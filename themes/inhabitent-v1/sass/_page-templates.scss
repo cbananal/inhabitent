@@ -184,17 +184,27 @@
   flex-wrap: wrap;
 }
 
-.product-items {
+.product-info {
   width: 23%;
   margin: 15px 5px;
   padding: 0;
-  border: 1px solid grey;
-  img {
-    width: 100%;
-    max-height: auto;
+  border: 1px solid $color_border;
+}
+
+.product-photo {
+  width: auto;
+  height: 250px;
+  position:relative;
+  overflow: hidden;
+    img {
+      max-height: 250px;
+      max-width: none; //expands the photo
+      width: auto; //keeps the ratio by stopping it from expanding/stretching all the way
+      position: absolute;
+      transform: translate(-50%,-50%); //centers photo
+      top: 50%; //percentage value is used because not all photos are of the same size. 50% would always target the middle
+      border-bottom: 6px solid $color_border;
   }
-  align-items: space-around;
-  
 }
 
 

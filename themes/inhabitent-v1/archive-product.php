@@ -33,7 +33,7 @@ get_header(); ?>
           <?php foreach ($product_post as $post) : setup_postdata ($post); ?>
 						<div class="product-info">
 							<div class="product-photo">
-	            	<a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail() ?></a>
+	            	<a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail('large') ?></a>
 							</div>
 	            <p><?php the_title() ?><span><?php echo CFS()->get( 'price' ); ?></span></p>
 

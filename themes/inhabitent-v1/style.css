@@ -917,17 +917,25 @@ object {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-.product-items {
+.product-info {
   width: 23%;
   margin: 15px 5px;
   padding: 0;
-  border: 1px solid grey;
-  -ms-flex-align: space-around;
-      -ms-grid-row-align: space-around;
-      align-items: space-around; }
-  .product-items img {
-    width: 100%;
-    max-height: auto; }
+  border: 1px solid #e1e1e1; }
+
+.product-photo {
+  width: auto;
+  height: 250px;
+  position: relative;
+  overflow: hidden; }
+  .product-photo img {
+    max-height: 250px;
+    max-width: none;
+    width: auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    border-bottom: 6px solid #e1e1e1; }
 
 /*------------ BLOG ----------*/
 .blog .site-content {
