@@ -79,13 +79,13 @@ add_action( 'wp_enqueue_scripts', 'inhabitent_about_bg' );
 
 
 // Product Archive Page: Sorts Posts and Changes No. of Posts Displayed
-// function inhabitent_filter_product_query() {
-//
-// 	if ( is_post_type_archive() && !is_admin() && $query->is_main_query() ) {
-// 		$query->set('orderby', 'title');
-// 		$query->set('order', 'ASC');
-// 		$query->set('post_per_page', 16)
-// 	}
-//
-// }
-// add_action( 'pre_get_posts', 'inhabitent_filter_product_query');
+function inhabitent_filter_product_query($query) {
+
+	if ( is_post_type_archive('product') && !is_admin() && $query->is_main_query() ) {
+		$query->set('orderby', 'title');
+		$query->set('order', 'ASC');
+		$query->set('post_per_page', 16);
+	}
+
+}
+add_action( 'pre_get_posts', 'inhabitent_filter_product_query');

@@ -24,14 +24,19 @@ get_header(); ?>
         <div class="product-list">
           <?php
              $args = array( 'post_type' => 'product',
-                            'posts_per_page' => 16 );
+                            'posts_per_page' => 16,
+														'order' => 'ASC',
+													 	'orderby' => 'title',
+													 );
              $product_post = get_posts( $args ); // returns an array of posts
           ?>
           <?php foreach ($product_post as $post) : setup_postdata ($post); ?>
-						<div class="product-items">
-	            <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail() ?></a>
-	            <p><?php the_title() ?></p>
-	            <p><?php echo CFS()->get( 'price' ); ?></p>
+						<div class="product-info">
+							<div class="product-photo">
+	            	<a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail() ?></a>
+							</div>
+	            <p><?php the_title() ?><span><?php echo CFS()->get( 'price' ); ?></span></p>
+
 						</div>
 						<!--end product-items-->
           <?php endforeach; wp_reset_postdata(); ?>
