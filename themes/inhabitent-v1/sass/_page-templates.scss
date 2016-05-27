@@ -152,10 +152,12 @@
 
 /*------- Shop: Products Archive -----*/
 
-.product-page-container {
+.product-heading {
   @include general-container;
-  margin: 40px auto;
+  margin: 35px auto;
+  padding-bottom: 30px;
   text-align: center;
+  border-bottom: $dashed_border;
   h1 {
     font-size: 2.5rem;
     font-family: $font_accent;
@@ -165,12 +167,9 @@
 }
 
 .tax-links {
-  margin-bottom: 60px;
-  padding-bottom: 30px;
   font-size: 1.2rem;
   font-family: $font_accent;
   text-transform: uppercase;
-  border-bottom: 1px dashed grey;
   a {
     margin: 20px;
     color: $color_tax-nav;
@@ -179,16 +178,20 @@
 }
 
 .product-list {
+  @include general-container;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.product-info {
+.product-info-box {
   width: 23%;
   margin: 15px 5px;
-  padding: 0;
   border: 1px solid $color_border;
+  line-height: 0.5rem;
+  p {
+    margin: 20px 15px;
+  }
 }
 
 .product-photo {
@@ -203,8 +206,9 @@
       position: absolute;
       transform: translate(-50%,-50%); //centers photo
       top: 50%; //percentage value is used because not all photos are of the same size. 50% would always target the middle
+      left: 50%;
       border-bottom: 6px solid $color_border;
-  }
+    }
 }
 
 

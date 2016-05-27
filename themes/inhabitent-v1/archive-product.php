@@ -12,7 +12,8 @@ get_header(); ?>
 
       <?php $terms = get_terms('product-type'); ?>
       <?php if ( !empty($terms) && !is_wp_error($terms) ) : ?>
-      <div class="product-page-container">
+				
+      <div class="product-heading">
         <h1>Shop Stuff</h1>
         <div class="tax-links">
           <?php foreach ($terms as $term) : ?>
@@ -20,6 +21,8 @@ get_header(); ?>
           <?php endforeach; wp_reset_postdata(); ?>
         </div>
 				<!--end tax-links-->
+			</div>
+			<!--end product-heading-->
       <?php endif; ?>
         <div class="product-list">
           <?php
@@ -31,20 +34,16 @@ get_header(); ?>
              $product_post = get_posts( $args ); // returns an array of posts
           ?>
           <?php foreach ($product_post as $post) : setup_postdata ($post); ?>
-						<div class="product-info">
+						<div class="product-info-box">
 							<div class="product-photo">
 	            	<a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail('large') ?></a>
 							</div>
 	            <p><?php the_title() ?><span><?php echo CFS()->get( 'price' ); ?></span></p>
-
 						</div>
-						<!--end product-items-->
+						<!--end product-info-box-->
           <?php endforeach; wp_reset_postdata(); ?>
-
         </div>
         <!--end product list-->
-      </div>
-			<!--end product-page container-->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
