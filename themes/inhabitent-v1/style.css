@@ -907,6 +907,14 @@ object {
     .entry-title a:hover {
       color: #f0e4d1; }
 
+/*------------ ABOUT ----------*/
+/*------------ ARCHIVE - PRODUCT PAGE ----------*/
+.product-container {
+  width: 1120px;
+  margin: 0 auto;
+  margin: 0 auto;
+  text-align: center; }
+
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/
 /*=======================================*/

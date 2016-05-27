@@ -168,3 +168,12 @@
     }
   }
 }
+
+/*------------ ABOUT ----------*/
+
+/*------------ ARCHIVE - PRODUCT PAGE ----------*/
+.product-container {
+  @include general-container;
+  margin: 0 auto;
+  text-align: center;
+}
