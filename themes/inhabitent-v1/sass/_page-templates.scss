@@ -150,7 +150,7 @@
 } //end entries-container
 
 
-/*------- Shop: Products Archive -----*/
+/*------- Shop: Product's Archive Page / Tax Page -----*/
 
 .product-heading {
   @include general-container;
@@ -210,16 +210,16 @@
     display:inline;
     background:#fff;
     &:before {
-      width:0;
-      float:left;
-      white-space:nowrap;
-      content:'.......................................................'
+      width: 0;
+      float: left;
+      white-space: nowrap;
+      content: '.......................................................'
     }
   }
   .product-price {
     padding: 0 10px;
     float: right;
-    background:#fff;
+    background: #fff;
   }
 }
 
