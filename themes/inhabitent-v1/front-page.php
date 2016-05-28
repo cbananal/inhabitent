@@ -45,7 +45,7 @@ get_header(); ?>
 								<div class="entry-info"
 									<p><?php the_date('j F Y') ?> / <?php echo comments_number(); ?></p>
 									<h4><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
-									<a href="<?php echo get_permalink(); ?>">Read Entry</a>
+									<a class="secondary-button" href="<?php echo get_permalink(); ?>">Read Entry</a>
 								</div>
 								<!--end entry-info-->
 							</div>
