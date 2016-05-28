@@ -10,29 +10,27 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+		<div class="single-product-container">
+			<?php while ( have_posts() ) : the_post(); ?>
 
-      <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-      	<header class="entry-header">
+      	<div class="single-product-photo">
       		<?php if ( has_post_thumbnail() ) : ?>
       			<?php the_post_thumbnail( 'large' ); ?>
       		<?php endif; ?>
+				</div>
 
-      		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-      		<div class="entry-meta">
-      			<!-- <?php //red_starter_posted_on(); ?> / <?php //red_starter_comment_count(); ?> / <?php //red_starter_posted_by(); ?> -->
-      		</div><!-- .entry-meta -->
-      	</header><!-- .entry-header -->
-
-      	<div class="entry-content">
-          <!--PRICE GOES HERE-->
-					<p><?php echo CFS()->get( 'price' ); ?></p>
+      	<div class="single-product-info">
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					<p class="single-product-price"><?php echo CFS()->get( 'price' ); ?></p>
       		<?php the_content(); ?>
-      	</div><!-- .entry-content -->
-      </article><!-- #post-## -->
+					<a class="secondary-button" href="#"><span class="fa fa-facebook"></span> Like</span></a>
+					<a class="secondary-button" href="#"><span class="fa fa-twitter"></span> Tweet</span></a>
+					<a class="secondary-button" href="#"><span class="fa fa-pinterest"></span> Pin</span></a>
+      	</div>
 
-		<?php endwhile; // End of the loop. ?>
+			<?php endwhile; // End of the loop. ?>
+		</div>
+		<!--end single-product container-->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
