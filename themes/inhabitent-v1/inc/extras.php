@@ -60,6 +60,13 @@ function inhabitent_remove_submenus() {
 add_action( 'admin_init', 'inhabitent_remove_submenus', 102 );
 
 
+//Link Font-Awesome Stylesheet
+function inhabitent_font_awesome(){
+	wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/font-awesome/css/font-awesome.css');
+}
+add_action('wp_enqueue_scripts','inhabitent_font_awesome');
+
+
 //Add Background Image on About
 function inhabitent_about_bg() {
 			if (!is_page_template ('about.php')) {
