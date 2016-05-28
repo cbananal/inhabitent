@@ -208,7 +208,7 @@
   .product-title{
     padding: 10px;
     display:inline;
-    background:#fff;
+    background: $color_bg-product-title;
     &:before {
       width: 0;
       float: left;
@@ -219,7 +219,7 @@
   .product-price {
     padding: 0 10px;
     float: right;
-    background: #fff;
+    background: $color_bg-product-title;
   }
 }
 
