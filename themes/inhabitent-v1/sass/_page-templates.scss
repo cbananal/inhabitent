@@ -12,6 +12,22 @@
   padding-top: 45px;
 }
 
+a.secondary-button {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  color: $color_link-secondary-button;
+  font-family: $font_accent;
+  border: 1px solid $color_border-secondary-button;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 4rem;
+  &:hover {
+    color: $color_link-secondary-button-hover;
+    background-color: $color_bg-button;
+    border: 0;
+  }
+}
+
 
 /*------ Front Page: Shared Styles -----*/
 
@@ -130,21 +146,6 @@
           }
         }
       }
-      > a {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-        color: $color_link-featured-entries-cta;
-        font-family: $font_accent;
-        border: 1px solid $color_bg-featured-entries-cta;
-        text-transform: uppercase;
-        text-decoration: none;
-        line-height: 4rem;
-        &:hover {
-          color: $color_link-featured-entries-cta-hover;
-          background-color: $color_bg-button;
-          border: 0;
-        }
-      }
     } //end entry-info
   } //end entry-box
 } //end entries-container
@@ -220,6 +221,43 @@
     padding: 0 10px;
     float: right;
     background: $color_bg-product-title;
+  }
+}
+
+
+/*------- Shop: Product's Single Post -----*/
+
+.single-product-container {
+  @include general-container;
+  min-height: 480px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.single-product-photo {
+  width: 48%;
+  padding: 24px 0;
+  line-height: $base_line-height;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.single-product-info {
+  width: 48%;
+  line-height: $base_line-height;
+  h1 {
+    font-size: 2.4rem;
+    color: $orange;
+    letter-spacing: 2px;
+  }
+  .single-product-price {
+    font-size: 1.9em;
+    font-family: $font_accent;
+
   }
 }
 
