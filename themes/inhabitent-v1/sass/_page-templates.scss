@@ -31,7 +31,7 @@ a.secondary-button {
 /*------- Shared Templates -----*/
 
 
-/* Page.php Template */
+/* Page.php Default Template */
 .page {
   .content-area {
     margin-top: 0;
@@ -51,6 +51,39 @@ a.secondary-button {
   line-height: $base_line-height;
 }
 
+.page {
+  .entry-title {
+    padding: 30px 0 10px;
+    font-size: 2.4rem;
+    font-family: $font_accent;
+    text-transform: uppercase;
+  }
+  h2 {
+    margin-top: 35px;
+    font-size: 2rem;
+    font-family: $font_accent;
+    text-transform: uppercase;
+    color: $color_text-heading;
+  }
+  .wpcf7-form {
+    font-size: 1.1rem;
+    color: $color_text-form-label;
+    font-family: $font-accent;
+    text-transform: uppercase;
+    span {
+      color: $color_text-form-required;
+    }
+    input {
+      font-family: $font_main;
+      background-color: $color_bg-form-input;
+      border-radius: 0;
+    }
+    textarea {
+      @extend input;
+    }
+  }
+}
+
 .page-sidebar {
   padding-left: 30px;
   padding-right: 10px;
@@ -60,9 +93,8 @@ a.secondary-button {
     .widget-title {
       font-size: 1.5rem;
       letter-spacing: 2px;
-      padding: 30px 0 10px;
+      padding: 10px 0 5px;
     }
-
     .contact-meta {
       width: 100%;
       height: auto;
@@ -72,7 +104,6 @@ a.secondary-button {
         padding-top: 5px;
       }
     }
-
     .day-of-week {
       font-weight: bold;
     }
@@ -88,21 +119,6 @@ a.secondary-button {
         color: $color_link-widget-hover;
       }
     }
-  }
-}
-
-.page {
-  .entry-title {
-    padding: 30px 0 10px;
-    font-size: 2.4rem;
-    font-family: $font_accent;
-    text-transform: uppercase;
-  }
-  h2 {
-    font-size: 2rem;
-    font-family: $font_accent;
-    text-transform: uppercase;
-    color: $color_text-heading;
   }
 }
 
