@@ -28,127 +28,11 @@ a.secondary-button {
   }
 }
 
-/*------- Shared Templates -----*/
-
-
-/* Page.php Default Template */
-
-.page {
-  .site-content {
-    padding: 45px 0 0 0;
-  }
-  .content-area {
-    margin-top: 0;
-    border-right: $border_solid;
-  }
-}
-
-.page-container {
-  @include general-container;
-  display: flex;
-  justify-content: space-between;
-}
-
-.page-content {
-  width: 100%;
-  padding-right: 40px;
-  line-height: $base_line-height;
-}
-
-.page-sidebar {
-  padding-left: 30px;
-  padding-right: 10px;
-  width: 50%;
-  .widget {
-    margin: 18px auto 20px;
-    .widget-title {
-      font-size: 1.5rem;
-      letter-spacing: 2px;
-      padding: 10px 0 5px;
-    }
-    .contact-meta {
-      width: 100%;
-      height: auto;
-      display: flex;
-      i {
-        width: 35px;
-        padding-top: 5px;
-      }
-    }
-    .day-of-week {
-      font-weight: bold;
-    }
-    ul {
-      margin-left: 0;
-      padding-left: 0;
-      list-style-type: none;
-    }
-    a {
-      color: $color_link-widget;
-      text-decoration: none;
-      &:hover {
-        color: $color_link-widget-hover;
-      }
-    }
-  }
-}
-
-/* Page.php: Contact - Content Area */
-
-.page {
-  .entry-title {
-    padding: 30px 0 10px;
-    font-size: 2.4rem;
-    font-family: $font_accent;
-    text-transform: uppercase;
-  }
-  h2 {
-    margin-top: 35px;
-    font-size: 2rem;
-    font-family: $font_accent;
-    text-transform: uppercase;
-    color: $color_text-heading;
-  }
-  .wpcf7-form {
-    padding-bottom: 20px;
-    font-size: 1.1rem;
-    color: $color_text-form-label;
-    font-family: $font-accent;
-    text-transform: uppercase;
-    span {
-      color: $color_text-form-required;
-    }
-    input {
-      font-family: $font_main;
-      background-color: $color_bg-form-input;
-      border-radius: 0;
-    }
-    textarea {
-      @extend input;
-    }
-
-    .wpcf7-submit{
-      @include main-button;
-      padding: 12px 25px;
-      box-shadow: none;
-      text-shadow: none;
-      border: 0;
-    }
-
-    .wpcf7-not-valid-tip {
-      @include form-error;
-      color: red;
-    }
-
-    .wpcf7-response-output {
-      @include form-error;
-    }
-  }
-}
 
 /*------- Custom/Individual Templates -----*/
 
 /* Front Page: Shared Styles  */
+
 .home .site-content {
   padding-top: 0;
 }
@@ -366,5 +250,64 @@ a.secondary-button {
     font-size: 1.9em;
     font-family: $font_accent;
 
+  }
+}
+
+
+/* Journal */
+
+.blog {
+  @include two-columns;
+}
+
+
+/* Contact: Content */
+
+.page-id-27 {
+  @include two-columns;
+  line-height: $base_line-height;
+  .entry-title {
+    padding: 30px 0 10px;
+    font-size: 2.4rem;
+    font-family: $font_accent;
+    text-transform: uppercase;
+  }
+  h2 {
+    margin-top: 35px;
+    font-size: 2rem;
+    font-family: $font_accent;
+    text-transform: uppercase;
+    color: $color_text-heading;
+  }
+  .wpcf7-form {
+    font-size: 1.1rem;
+    color: $color_text-form-label;
+    font-family: $font-accent;
+    text-transform: uppercase;
+    span {
+      color: $color_text-form-required;
+    }
+    input {
+      font-family: $font_main;
+      background-color: $color_bg-form-input;
+      border-radius: 0;
+    }
+    textarea {
+      @extend input;
+    }
+    .wpcf7-submit{
+      @include main-button;
+      padding: 12px 25px;
+      box-shadow: none;
+      text-shadow: none;
+      border: 0;
+    }
+    .wpcf7-not-valid-tip {
+      @include form-error;
+      color: red;
+    }
+    .wpcf7-response-output {
+      @include form-error;
+    }
   }
 }
