@@ -805,7 +805,7 @@ object {
 /*=======================================*/
 /*------- Shared Classes -----*/
 .site-content {
-  padding-top: 45px; }
+  padding: 45px 0; }
 
 a.secondary-button {
   padding: 10px 20px;
@@ -823,6 +823,9 @@ a.secondary-button {
 
 /*------- Shared Templates -----*/
 /* Page.php Default Template */
+.page .site-content {
+  padding: 45px 0 0 0; }
+
 .page .content-area {
   margin-top: 0;
   border-right: 1px solid #e1e1e1; }
@@ -854,6 +857,7 @@ a.secondary-button {
   color: #2f1339; }
 
 .page .wpcf7-form {
+  padding-bottom: 20px;
   font-size: 1.1rem;
   color: #2f1339;
   font-family: "Novecento", sans-serif;
@@ -1102,7 +1106,6 @@ a.secondary-button {
 /*=======================================*/
 .site-footer {
   height: auto;
-  margin-top: 60px;
   padding: 60px 0 10px;
   color: #fff;
   font-family: "Merriweather", serif;
