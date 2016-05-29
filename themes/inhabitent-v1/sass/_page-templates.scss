@@ -32,6 +32,7 @@ a.secondary-button {
 
 
 /* Page.php Default Template */
+
 .page {
   .site-content {
     padding: 45px 0 0 0;
@@ -52,40 +53,6 @@ a.secondary-button {
   width: 100%;
   padding-right: 40px;
   line-height: $base_line-height;
-}
-
-.page {
-  .entry-title {
-    padding: 30px 0 10px;
-    font-size: 2.4rem;
-    font-family: $font_accent;
-    text-transform: uppercase;
-  }
-  h2 {
-    margin-top: 35px;
-    font-size: 2rem;
-    font-family: $font_accent;
-    text-transform: uppercase;
-    color: $color_text-heading;
-  }
-  .wpcf7-form {
-    padding-bottom: 20px;
-    font-size: 1.1rem;
-    color: $color_text-form-label;
-    font-family: $font-accent;
-    text-transform: uppercase;
-    span {
-      color: $color_text-form-required;
-    }
-    input {
-      font-family: $font_main;
-      background-color: $color_bg-form-input;
-      border-radius: 0;
-    }
-    textarea {
-      @extend input;
-    }
-  }
 }
 
 .page-sidebar {
@@ -126,6 +93,58 @@ a.secondary-button {
   }
 }
 
+/* Page.php: Contact - Content Area */
+
+.page {
+  .entry-title {
+    padding: 30px 0 10px;
+    font-size: 2.4rem;
+    font-family: $font_accent;
+    text-transform: uppercase;
+  }
+  h2 {
+    margin-top: 35px;
+    font-size: 2rem;
+    font-family: $font_accent;
+    text-transform: uppercase;
+    color: $color_text-heading;
+  }
+  .wpcf7-form {
+    padding-bottom: 20px;
+    font-size: 1.1rem;
+    color: $color_text-form-label;
+    font-family: $font-accent;
+    text-transform: uppercase;
+    span {
+      color: $color_text-form-required;
+    }
+    input {
+      font-family: $font_main;
+      background-color: $color_bg-form-input;
+      border-radius: 0;
+    }
+    textarea {
+      @extend input;
+    }
+
+    .wpcf7-submit{
+      @include main-button;
+      padding: 12px 25px;
+      box-shadow: none;
+      text-shadow: none;
+      border: 0;
+    }
+
+    .wpcf7-not-valid-tip {
+      @include form-error;
+      color: red;
+    }
+
+    .wpcf7-response-output {
+      @include form-error;
+    }
+  }
+}
 
 /*------- Custom/Individual Templates -----*/
 
@@ -192,20 +211,8 @@ a.secondary-button {
     &:last-child {
       margin-right: 0;
     }
-  }
-  a {
-    width: auto;
-    margin-bottom: 20px;
-    padding: 5px 24px;
-    display: inline-block;
-    font-size: 0.9rem;
-    color: $color_text-button;
-    background-color: $color_bg-button;
-    font-family: $font_accent;
-    text-decoration: none;
-    text-transform: uppercase;
-    &:hover {
-      background-color: darken($color_bg-button, 10%);
+    a {
+      @include main-button;
     }
   }
 }

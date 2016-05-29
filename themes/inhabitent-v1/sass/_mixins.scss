@@ -24,3 +24,25 @@
 	display: flex;
 	justify-content: center;
 }
+
+@mixin main-button {
+	  width: auto;
+	  margin-bottom: 20px;
+	  padding: 5px 24px;
+	  display: inline-block;
+	  font-size: 0.9rem;
+	  color: $color_text-button;
+	  background-color: $color_bg-button;
+	  font-family: $font_accent;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  &:hover {
+	    background-color: darken($color_bg-button, 10%);
+	  }
+}
+
+@mixin form-error {
+	font-size: $font_default-size;
+	font-family: $font_main;
+	text-transform: initial;
+}
