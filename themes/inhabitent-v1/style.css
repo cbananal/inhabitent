@@ -767,7 +767,7 @@ object {
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/
 /*=======================================*/
-/*------- All Pages: Shared Styles -----*/
+/*------- Shared Classes -----*/
 .site-content {
   padding-top: 45px; }
 
@@ -785,7 +785,69 @@ a.secondary-button {
     background-color: #248A83;
     border: 0; }
 
-/*------ Front Page: Shared Styles -----*/
+/*------- Shared Templates -----*/
+/* Page.php Template */
+.page .content-area {
+  margin-top: 0;
+  border-right: 1px solid #e1e1e1; }
+
+.page-container {
+  width: 1120px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.page-content {
+  width: 100%;
+  padding-right: 40px;
+  line-height: 1.75rem; }
+
+.page-sidebar {
+  padding-left: 30px;
+  padding-right: 10px;
+  width: 50%; }
+  .page-sidebar .widget {
+    margin: 18px auto 20px; }
+    .page-sidebar .widget .widget-title {
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      padding: 30px 0 10px; }
+    .page-sidebar .widget .contact-meta {
+      width: 100%;
+      height: auto;
+      display: -ms-flexbox;
+      display: flex; }
+      .page-sidebar .widget .contact-meta i {
+        width: 35px;
+        padding-top: 5px; }
+    .page-sidebar .widget .day-of-week {
+      font-weight: bold; }
+    .page-sidebar .widget ul {
+      margin-left: 0;
+      padding-left: 0;
+      list-style-type: none; }
+    .page-sidebar .widget a {
+      color: #248A83;
+      text-decoration: none; }
+      .page-sidebar .widget a:hover {
+        color: #2f1339; }
+
+.page .entry-title {
+  padding: 30px 0 10px;
+  font-size: 2.4rem;
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase; }
+
+.page h2 {
+  font-size: 2rem;
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase;
+  color: #2f1339; }
+
+/*------- Custom/Individual Templates -----*/
+/* Front Page: Shared Styles  */
 .home .site-content {
   padding-top: 0; }
 
@@ -798,7 +860,7 @@ a.secondary-button {
   text-transform: uppercase;
   letter-spacing: 0.2rem; }
 
-/*------------ Front Page: Hero ----------*/
+/* Front Page: Hero */
 .hero-container {
   height: 100vh;
   margin-bottom: 50px;
@@ -811,7 +873,7 @@ a.secondary-button {
   -ms-flex-align: center;
       align-items: center; }
 
-/*------- Front Page: Featured Entries -----*/
+/* Front Page: Shop Section */
 .shop-container {
   text-align: center;
   margin-bottom: 60px; }
@@ -854,7 +916,7 @@ a.secondary-button {
     .shop-cta a:hover {
       background-color: #19625d; }
 
-/*------- Front Page: Featured Entries -----*/
+/* Front Page: Featured Entries */
 .entries-container {
   width: 1120px;
   margin: 0 auto;
@@ -886,7 +948,7 @@ a.secondary-button {
         .entries-container .entry-box .entry-info h4 a:hover {
           color: #2f1339; }
 
-/*------- Shop: Product's Archive Page / Tax Page -----*/
+/* Shop: Product's Archive Page / Tax Page */
 .product-heading {
   width: 1120px;
   margin: 0 auto;
@@ -952,7 +1014,7 @@ a.secondary-button {
     float: right;
     background: #fff; }
 
-/*------- Shop: Product's Single Post -----*/
+/* Shop: Product's Single Post */
 .single-product-container {
   width: 1120px;
   margin: 0 auto;
@@ -984,34 +1046,6 @@ a.secondary-button {
     font-size: 1.9em;
     font-family: "Novecento", sans-serif; }
 
-/*------------ BLOG ----------*/
-.blog .site-content {
-  width: 1120px;
-  margin: 0 auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  .blog .site-content .content-area {
-    width: 70%;
-    border-right: 1px solid #e1e1e1; }
-  .blog .site-content .widget-area {
-    width: 30%; }
-
-.entry-title {
-  font-size: 2rem;
-  font-family: "Novecento", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem; }
-  .entry-title a {
-    padding: 10px;
-    color: #fff;
-    background-color: #248A83;
-    text-decoration: none; }
-    .entry-title a:hover {
-      color: #f0e4d1; }
-
-/*------------ ABOUT ----------*/
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/
 /*=======================================*/

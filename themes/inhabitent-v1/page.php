@@ -6,17 +6,24 @@
  */
 get_header(); ?>
 
+<div class="page-container">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			<div class="page-content">
+				<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+					<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-			<?php endwhile; // End of the loop. ?>
+				<?php endwhile; // End of the loop. ?>
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+	<div class="page-sidebar">
+		<?php get_sidebar(); ?>
+	</div>
+</div>
+<!--end page-container-->
 <?php get_footer(); ?>

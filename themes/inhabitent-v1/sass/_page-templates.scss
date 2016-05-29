@@ -7,7 +7,7 @@
 /*=======================================*/
 
 
-/*------- All Pages: Shared Styles -----*/
+/*------- Shared Classes -----*/
 .site-content {
   padding-top: 45px;
 }
@@ -28,9 +28,88 @@ a.secondary-button {
   }
 }
 
+/*------- Shared Templates -----*/
 
-/*------ Front Page: Shared Styles -----*/
 
+/* Page.php Template */
+.page {
+  .content-area {
+    margin-top: 0;
+    border-right: $border_solid;
+  }
+}
+
+.page-container {
+  @include general-container;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-content {
+  width: 100%;
+  padding-right: 40px;
+  line-height: $base_line-height;
+}
+
+.page-sidebar {
+  padding-left: 30px;
+  padding-right: 10px;
+  width: 50%;
+  .widget {
+    margin: 18px auto 20px;
+    .widget-title {
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      padding: 30px 0 10px;
+    }
+
+    .contact-meta {
+      width: 100%;
+      height: auto;
+      display: flex;
+      i {
+        width: 35px;
+        padding-top: 5px;
+      }
+    }
+
+    .day-of-week {
+      font-weight: bold;
+    }
+    ul {
+      margin-left: 0;
+      padding-left: 0;
+      list-style-type: none;
+    }
+    a {
+      color: $color_link-widget;
+      text-decoration: none;
+      &:hover {
+        color: $color_link-widget-hover;
+      }
+    }
+  }
+}
+
+.page {
+  .entry-title {
+    padding: 30px 0 10px;
+    font-size: 2.4rem;
+    font-family: $font_accent;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 2rem;
+    font-family: $font_accent;
+    text-transform: uppercase;
+    color: $color_text-heading;
+  }
+}
+
+
+/*------- Custom/Individual Templates -----*/
+
+/* Front Page: Shared Styles  */
 .home .site-content {
   padding-top: 0;
 }
@@ -46,7 +125,7 @@ a.secondary-button {
 }
 
 
-/*------------ Front Page: Hero ----------*/
+/* Front Page: Hero */
 
 .hero-container {
   height: 100vh;
@@ -61,7 +140,7 @@ a.secondary-button {
 }
 
 
-/*------- Front Page: Featured Entries -----*/
+/* Front Page: Shop Section */
 
 .shop-container {
   text-align: center;
@@ -112,7 +191,7 @@ a.secondary-button {
 }
 
 
-/*------- Front Page: Featured Entries -----*/
+/* Front Page: Featured Entries */
 
 .entries-container {
   @include general-container;
@@ -151,7 +230,7 @@ a.secondary-button {
 } //end entries-container
 
 
-/*------- Shop: Product's Archive Page / Tax Page -----*/
+/* Shop: Product's Archive Page / Tax Page */
 
 .product-heading {
   @include general-container;
@@ -225,7 +304,7 @@ a.secondary-button {
 }
 
 
-/*------- Shop: Product's Single Post -----*/
+/* Shop: Product's Single Post */
 
 .single-product-container {
   @include general-container;
@@ -260,38 +339,3 @@ a.secondary-button {
 
   }
 }
-
-
-/*------------ BLOG ----------*/
-
-.blog {
-  .site-content {
-    @include general-container;
-    @include default-flex;
-  .content-area {
-    width: 70%;
-    border-right: 1px solid $color_border;
-  }
-  .widget-area {
-    width: 30%;
-  }
-  }
-}
-
-.entry-title {
-  font-size: 2rem;
-  font-family: $font_accent;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  a {
-    padding: 10px;
-    color: $color_link-entry-title;
-    background-color: $color_bg-entry-title;
-    text-decoration: none;
-    &:hover {
-      color: $color_link-entry-title-hover;
-    }
-  }
-}
-
-/*------------ ABOUT ----------*/
