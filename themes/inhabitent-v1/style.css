@@ -1041,6 +1041,8 @@ a.secondary-button {
   .single-product-info h1 {
     font-size: 2.4rem;
     color: #d99054;
+    font-family: "Novecento", sans-serif;
+    text-transform: uppercase;
     letter-spacing: 2px; }
   .single-product-info .single-product-price {
     font-size: 1.9em;

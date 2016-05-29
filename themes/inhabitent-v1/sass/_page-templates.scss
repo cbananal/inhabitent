@@ -331,6 +331,8 @@ a.secondary-button {
   h1 {
     font-size: 2.4rem;
     color: $orange;
+    font-family: $font_accent;
+    text-transform: uppercase;
     letter-spacing: 2px;
   }
   .single-product-price {
