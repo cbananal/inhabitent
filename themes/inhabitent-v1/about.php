@@ -14,10 +14,12 @@ get_header(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-				<h1>Our Story</h1>
-        <p><?php echo CFS()->get( 'our_story' ); ?></p>
-				<h1>Our Team</h1>
-				<p><?php echo CFS()->get( 'our_team' ); ?></p>
+				<div class="about-text">
+					<h1>Our Story</h1>
+	        <p><?php echo CFS()->get( 'our_story' ); ?></p>
+					<h1>Our Team</h1>
+					<p><?php echo CFS()->get( 'our_team' ); ?></p>
+				</div>
 
 			<?php endwhile; // End of the loop. ?>
 

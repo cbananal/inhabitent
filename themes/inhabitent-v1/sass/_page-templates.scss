@@ -296,6 +296,40 @@ a.secondary-button {
   }
 }
 
+/* About */
+.page-template-about {
+  .site-content {
+    padding: 0;
+  }
+  .entry-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .entry-title {
+    font-size: 3rem;
+    color: $color_text-title;
+    font-family: $font_accent;
+    text-transform: uppercase;
+  }
+  .about-text {
+    @include general-container;
+    padding-bottom: 100px;
+    h1 {
+      font-size: 2.2rem;
+      color: $color_text-heading;
+      font-family: $font_accent;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+    p{
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+}
+
 /* Contact: Content */
 
 .page-id-27 {

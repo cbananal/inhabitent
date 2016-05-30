@@ -631,7 +631,8 @@ a {
   background-color: #fff;
   border-bottom: 1px solid #e1e1e1;
   position: fixed;
-  opacity: 0.7; }
+  opacity: 0.7;
+  z-index: 3; }
 
 .site-header h1 {
   width: 50px;
@@ -1325,6 +1326,39 @@ a.secondary-button {
     text-decoration: none; }
     .single-post .entry-footer a:hover {
       color: #2f1339; }
+
+/* About */
+.page-template-about .site-content {
+  padding: 0; }
+
+.page-template-about .entry-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.page-template-about .entry-title {
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase; }
+
+.page-template-about .about-text {
+  width: 1120px;
+  margin: 0 auto;
+  padding-bottom: 100px; }
+  .page-template-about .about-text h1 {
+    font-size: 2.2rem;
+    color: #2f1339;
+    font-family: "Novecento", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px; }
+  .page-template-about .about-text p {
+    width: 70%;
+    margin: 0 auto; }
 
 /* Contact: Content */
 .page-id-27 {
