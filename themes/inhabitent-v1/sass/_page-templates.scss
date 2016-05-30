@@ -354,3 +354,41 @@ a.secondary-button {
     @include form;
   }
 }
+
+/*Error 404 */
+.error404 {
+  @include two-columns;
+  .page-title {
+    font-size: 2.3rem;
+    font-family: $font_accent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  fieldset {
+    border: 0;
+    button {
+      display: none;
+    }
+  }
+  a {
+    color: $color_link-widget;
+    text-decoration: none;
+    line-height: $base_line-height;
+  }
+  .widget {
+    h2 {
+      color: $color_text-heading;
+      font-family: $font_accent;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    ul {
+      margin-left: 0;
+      padding-left: 0;
+      list-style-type: none;
+    }
+    .screen-reader-text {
+      display: none;
+    }
+  }
+}

@@ -1452,6 +1452,79 @@ a.secondary-button {
       font-family: "Merriweather", serif;
       text-transform: initial; }
 
+/*Error 404 */
+.error404 .site-content {
+  padding-bottom: 0;
+  width: 1120px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .error404 .site-content .content-area {
+    width: 85%;
+    border-right: 1px solid #e1e1e1; }
+
+.error404 .widget-area {
+  width: 30%;
+  padding: 0 5px 0 40px; }
+  .error404 .widget-area .widget .widget-title {
+    font-family: "Novecento", sans-serif;
+    text-transform: uppercase;
+    color: #2f1339;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding: 30px 0 5px; }
+  .error404 .widget-area .widget .contact-meta {
+    width: 100%;
+    height: auto;
+    display: -ms-flexbox;
+    display: flex; }
+    .error404 .widget-area .widget .contact-meta i {
+      width: 35px;
+      padding-top: 5px; }
+  .error404 .widget-area .widget .day-of-week {
+    font-weight: bold; }
+  .error404 .widget-area .widget ul {
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none; }
+  .error404 .widget-area .widget a {
+    color: #248A83;
+    text-decoration: none; }
+    .error404 .widget-area .widget a:hover {
+      color: #2f1339; }
+
+.error404 .page-title {
+  font-size: 2.3rem;
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.error404 fieldset {
+  border: 0; }
+  .error404 fieldset button {
+    display: none; }
+
+.error404 a {
+  color: #248A83;
+  text-decoration: none;
+  line-height: 1.75rem; }
+
+.error404 .widget h2 {
+  color: #2f1339;
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.error404 .widget ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none; }
+
+.error404 .widget .screen-reader-text {
+  display: none; }
+
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/
 /*=======================================*/
