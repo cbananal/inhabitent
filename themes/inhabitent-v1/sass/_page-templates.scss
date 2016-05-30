@@ -254,7 +254,7 @@ a.secondary-button {
 }
 
 
-/* Journal */
+/* Journal and Monthly Archive*/
 
 .blog {
   @include journal-structure;
@@ -356,6 +356,7 @@ a.secondary-button {
 }
 
 /*Error 404 */
+
 .error404 {
   @include two-columns;
   .page-title {
@@ -390,5 +391,46 @@ a.secondary-button {
     .screen-reader-text {
       display: none;
     }
+  }
+}
+
+/*Search Results */
+.search-results {
+  @include two-columns;
+  @extend .error404;
+  .content-area {
+    padding: 0 40px 50px 0;
+    .page-title {
+      padding-bottom: 20px;
+      border-bottom: $border_solid;
+    }
+  }
+  .entry-title {
+    font-size: 2.2rem;
+    font-family: $font_accent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .page-numbers {
+    @include main-button;
+    padding: 5px 15px;
+    &:hover {
+      background-color: $color_link-pagination-hover;
+    }
+  }
+  .current {
+    padding: 8px 16px;
+    background-color: $color_bg-current-button;
+    &:hover {
+      background-color: $color_bg-current-button;
+    }
+  }
+}
+
+/* Monthly Archive */
+.date {
+  @extend .blog;
+  .content-area {
+    padding: 45px 40px 50px 8px;
   }
 }
