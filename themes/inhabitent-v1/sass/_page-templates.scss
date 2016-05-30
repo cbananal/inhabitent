@@ -259,11 +259,20 @@ a.secondary-button {
 .blog {
   @include journal-structure;
   line-height: $base_line-height;
+  .content-area {
+    padding: 0px 40px 50px 8px;
+  }
 }
 
 /* Journal: Single */
 .single-post{
   @include journal-structure;
+  .content-area {
+    padding: 45px 40px 50px 8px;
+  }
+  .entry-meta {
+    bottom: 6px;
+  }
   span {
     line-height: $base_line-height;
   }
@@ -292,48 +301,22 @@ a.secondary-button {
 .page-id-27 {
   @include two-columns;
   line-height: $base_line-height;
+  .content-area {
+    padding: 0px 40px 50px 8px;
+  }
   .entry-title {
-    padding: 30px 0 10px;
     font-size: 2.4rem;
     font-family: $font_accent;
     text-transform: uppercase;
   }
   h2 {
-    margin-top: 35px;
     font-size: 2rem;
     font-family: $font_accent;
     text-transform: uppercase;
     color: $color_text-heading;
   }
+
   .wpcf7-form {
-    font-size: 1.1rem;
-    color: $color_text-form-label;
-    font-family: $font-accent;
-    text-transform: uppercase;
-    span {
-      color: $color_text-form-required;
-    }
-    input {
-      font-family: $font_main;
-      background-color: $color_bg-form-input;
-      border-radius: 0;
-    }
-    textarea {
-      @extend input;
-    }
-    .wpcf7-submit{
-      @include main-button;
-      padding: 12px 25px;
-      box-shadow: none;
-      text-shadow: none;
-      border: 0;
-    }
-    .wpcf7-not-valid-tip {
-      @include form-error;
-      color: red;
-    }
-    .wpcf7-response-output {
-      @include form-error;
-    }
+    @include form;
   }
 }

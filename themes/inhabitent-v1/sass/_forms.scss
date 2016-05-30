@@ -60,3 +60,47 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+
+/*=======================================*/
+/*------ Inhabitent: Custom Styles ------*/
+/*=======================================*/
+
+@mixin form {
+		font-size: 1.1rem;
+		color: $color_text-form-label;
+		font-family: $font-accent;
+		text-transform: uppercase;
+		span {
+			color: $color_text-form-required;
+		}
+		input {
+			font-family: $font_main;
+			background-color: $color_bg-form-input;
+			border-radius: 0;
+		}
+		textarea {
+			@extend input;
+		}
+		.wpcf7-submit{
+			@include main-button;
+			padding: 12px 25px;
+			box-shadow: none;
+			text-shadow: none;
+			border: 0;
+		}
+		.wpcf7-not-valid-tip {
+			@include form-error;
+			color: red;
+		}
+		.wpcf7-response-output {
+			@include form-error;
+		}
+}
+
+//Contact Form Error
+@mixin form-error {
+	font-size: $font_default-size;
+	font-family: $font_main;
+	text-transform: initial;
+}
