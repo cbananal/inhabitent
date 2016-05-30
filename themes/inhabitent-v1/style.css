@@ -1069,6 +1069,9 @@ a.secondary-button {
       .blog .widget-area .widget a:hover {
         color: #2f1339; }
 
+.blog .entry-content {
+  margin-bottom: 70px; }
+
 .blog .entry-header {
   position: relative; }
 
@@ -1109,6 +1112,9 @@ a.secondary-button {
     text-decoration: none; }
     .blog .entry-meta a:hover {
       color: #f0e4d1; }
+
+.blog .secondary-button {
+  line-height: 0; }
 
 /* Contact: Content */
 .page-id-27 {

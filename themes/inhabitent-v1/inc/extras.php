@@ -66,7 +66,6 @@ function inhabitent_font_awesome(){
 }
 add_action('wp_enqueue_scripts','inhabitent_font_awesome');
 
-
 //Add Background Image on About
 function inhabitent_about_bg() {
 			if (!is_page_template ('about.php')) {

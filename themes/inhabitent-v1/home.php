@@ -38,6 +38,7 @@ get_header(); ?>
 
 					<div class="entry-content">
 						<?php the_excerpt(); ?>
+						<a class="secondary-button" href="<?php echo get_permalink(); ?>">Read More &rarr;</a>
 					</div><!-- .entry-content -->
 				</article><!-- #post-## -->
 

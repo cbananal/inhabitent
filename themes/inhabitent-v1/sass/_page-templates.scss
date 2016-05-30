@@ -258,6 +258,9 @@ a.secondary-button {
 
 .blog {
   @include two-columns;
+  .entry-content {
+    margin-bottom: 70px;
+  }
   .entry-header {
     position: relative;
   }
@@ -280,6 +283,9 @@ a.secondary-button {
     position: absolute;
   	bottom: 6px;
     right: 0;
+  }
+  .secondary-button {
+    line-height: 0;
   }
 
 }
