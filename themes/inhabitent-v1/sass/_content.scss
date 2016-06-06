@@ -53,6 +53,7 @@
 /*=======================================*/
 
 /* Comments */
+
 #reply-title {
 	font-size: 1.8rem;
 	font-family: $font_accent;
@@ -63,23 +64,75 @@
 .comments-area {
 	margin-top: 60px;
 	form {
+		@include form;
 		p:first-child {
 			font-family: $font_main;
 			text-transform: initial;
 		}
-		@include form;
 	}
-	.comment-form-author, .comment-form-email {
-		width:50%;
-		display: inline-grid;
-		label {
-			display: inline;
+	a {
+		color: $color_link-comments-area;
+		text-decoration: none;
+		&:hover {
+			color: $color_link-comments-area-hover;
 		}
-		input {
-			width: 100%;
-			display: block;
+	}
+}
 
+.comments-title {
+	font-size: 2rem;
+	color: $color_text-heading-comments;
+	font-family: $font_accent;
+	text-transform: uppercase;
+}
 
-		}
+.comment-list {
+	margin: 0;
+	padding: 0;
+	> li {
+		border-bottom: 1px solid $color_border-comments-separator;
+	}
+	.children {
+		border-top: 1px solid $color_border-comments-separator;
+	}
+}
+
+.comment-body {
+	// width: 100%;
+	padding: 25px 0;
+	display: flex;
+
+}
+
+.comment-author-avatar {
+	margin-right: 15px;
+	width: 65px;
+	height: 65px;
+	img {
+		border-radius: 100%;
+
+	}
+}
+
+.comment-author {
+	cite {
+		font-weight: bold;
+		font-style: normal;
+	}
+}
+
+.comment-metadata {
+	color: $color_text-date-comments;
+}
+
+.comment-form-author, .comment-form-email {
+	width:50%;
+	display: inline-grid;
+	label {
+		display: inline;
+	}
+	input {
+		width: 100%;
+		display: block;
 	}
 }

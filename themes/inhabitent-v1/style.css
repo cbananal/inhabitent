@@ -1,9 +1,9 @@
 /*!
-Theme Name: Inhabitent V.1
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
-Author: Claudine Bananal (RED Academy, Inc.)
+Author: RED Academy
 Author URI: http://www.redacademy.com
-Description: Inhabitent's 2016 theme, based on the RED Starter Theme, a WordPress starter theme for RED Academy students.
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -794,9 +794,6 @@ a {
     color: #2f1339;
     font-family: "Novecento", sans-serif;
     text-transform: uppercase; }
-    .comments-area form p:first-child {
-      font-family: "Merriweather", serif;
-      text-transform: initial; }
     .comments-area form span {
       color: #d99054; }
     .comments-area form input, .comments-area form textarea, .comments-area form .page-id-27 .wpcf7-form textarea, .page-id-27 .wpcf7-form .comments-area form textarea {
@@ -829,15 +826,57 @@ a {
       font-size: 16px;
       font-family: "Merriweather", serif;
       text-transform: initial; }
-  .comments-area .comment-form-author, .comments-area .comment-form-email {
-    width: 50%;
-    display: -ms-inline-grid;
-    display: inline-grid; }
-    .comments-area .comment-form-author label, .comments-area .comment-form-email label {
-      display: inline; }
-    .comments-area .comment-form-author input, .comments-area .comment-form-author form textarea, .comments-area form .comment-form-author textarea, .comments-area .comment-form-author .page-id-27 .wpcf7-form textarea, .page-id-27 .wpcf7-form .comments-area .comment-form-author textarea, .comments-area .comment-form-email input, .comments-area .comment-form-email form textarea, .comments-area form .comment-form-email textarea, .comments-area .comment-form-email .page-id-27 .wpcf7-form textarea, .page-id-27 .wpcf7-form .comments-area .comment-form-email textarea {
-      width: 100%;
-      display: block; }
+    .comments-area form p:first-child {
+      font-family: "Merriweather", serif;
+      text-transform: initial; }
+  .comments-area a {
+    color: #248A83;
+    text-decoration: none; }
+    .comments-area a:hover {
+      color: #2f1339; }
+
+.comments-title {
+  font-size: 2rem;
+  color: #2f1339;
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase; }
+
+.comment-list {
+  margin: 0;
+  padding: 0; }
+  .comment-list > li {
+    border-bottom: 1px solid #e1e1e1; }
+  .comment-list .children {
+    border-top: 1px solid #e1e1e1; }
+
+.comment-body {
+  padding: 25px 0;
+  display: -ms-flexbox;
+  display: flex; }
+
+.comment-author-avatar {
+  margin-right: 15px;
+  width: 65px;
+  height: 65px; }
+  .comment-author-avatar img {
+    border-radius: 100%; }
+
+.comment-author cite {
+  font-weight: bold;
+  font-style: normal; }
+
+.comment-metadata {
+  color: #808080; }
+
+.comment-form-author, .comment-form-email {
+  width: 50%;
+  display: -ms-inline-grid;
+  display: inline-grid; }
+  .comment-form-author label, .comment-form-email label {
+    display: inline; }
+  .comment-form-author input, .comment-form-author .comments-area form textarea, .comments-area form .comment-form-author textarea, .comment-form-author .page-id-27 .wpcf7-form textarea, .page-id-27 .wpcf7-form .comment-form-author textarea, .comment-form-email input, .comment-form-email .comments-area form textarea, .comments-area form .comment-form-email textarea, .comment-form-email .page-id-27 .wpcf7-form textarea, .page-id-27 .wpcf7-form .comment-form-email textarea {
+    width: 100%;
+    display: block; }
 
 /*--------------------------------------------------------------
 # Media

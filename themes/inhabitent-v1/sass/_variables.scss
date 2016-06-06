@@ -50,6 +50,8 @@ $dark-gray: #404040;
 /* Plain Text */
 $color_text-default: $dark-gray;
 $color_text-heading: $violet;
+$color_text-heading-comments: $violet;
+$color_text-date-comments: $medium-gray;
 $color_text-button: $white;
 $color_text-heading-footer: $orange;
 $color_text-form-label: $violet;
@@ -69,6 +71,8 @@ $color_link-footer: $white;
 $color_tax-nav: $green;
 $color_link-widget: $green;
 $color_link-widget-hover: $violet;
+$color_link-comments-area: $green;
+$color_link-comments-area-hover: $violet;
 $color_link-entry-footer: $green;
 $color_link-entry-footer-hover: $violet;
 $color_link-pagination-hover: $violet;
@@ -77,6 +81,7 @@ $color_link-pagination-hover: $violet;
 $color_border: $light-gray;
 $color_border-secondary-button: $black;
 $color_border-shop-hover: $orange;
+$color_border-comments-separator: $light-gray;
 $dashed_border: 1px dashed #c8c8c8;
 $border_solid: 1px solid #e1e1e1;
 
