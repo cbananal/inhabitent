@@ -19,6 +19,7 @@ a.secondary-button {
 
 /*------- Custom/Individual Templates -----*/
 
+
 /* Front Page: Shared Styles  */
 
 .home .site-content {
@@ -127,6 +128,53 @@ a.secondary-button {
     } //end entry-info
   } //end entry-box
 } //end entries-container
+
+
+/* Front Page: Adventures */
+
+.adventures-container {
+  @include general-container;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.featured-adventure-1 {
+  width: 49%;
+  height: 520px;
+  margin-right: 10px;
+  background-color: aquamarine;
+}
+
+.adventures-right {
+  width: 49%;
+  height: 520px;
+  // background-color: lime;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.featured-adventure-2 {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 20px;
+  background-color: coral;
+}
+
+.featured-adventure-3 {
+  width: 48%;
+  height: 250px;
+  margin-right: 20px;
+  background-color: purple;
+
+}
+
+.featured-adventure-4 {
+  width: 48%;
+  height: 250px;
+  background-color: gold;
+}
 
 
 /* Shop: Product's Archive Page / Tax Page */
@@ -252,6 +300,7 @@ a.secondary-button {
   }
 }
 
+
 /* Journal: Single */
 .single-post{
   @include journal-structure;
@@ -284,7 +333,9 @@ a.secondary-button {
   }
 }
 
+
 /* About */
+
 .page-template-about {
   .site-content {
     padding: 0;
@@ -318,6 +369,7 @@ a.secondary-button {
   }
 }
 
+
 /* Contact: Content */
 
 .page-id-27 {
@@ -342,6 +394,7 @@ a.secondary-button {
     @include form;
   }
 }
+
 
 /*Error 404 */
 
@@ -382,7 +435,9 @@ a.secondary-button {
   }
 }
 
-/*Search Results */
+
+/* Search Results */
+
 .search-results {
   @include two-columns;
   @extend .error404;
@@ -415,7 +470,9 @@ a.secondary-button {
   }
 }
 
+
 /* Monthly Archive */
+
 .date {
   @extend .blog;
   .content-area {

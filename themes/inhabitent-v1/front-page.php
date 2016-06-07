@@ -58,6 +58,20 @@ get_header(); ?>
 			<section class="featured-adventures">
 				<h1>Latest Adventures</h1>
 				<div class="adventures-container">
+					<div class="featured-adventure-1">
+						1
+					</div>
+					<div class="adventures-right">
+						<div class="featured-adventure-2">
+							2
+						</div>
+						<div class="featured-adventure-3">
+							3
+						</div>
+						<div class="featured-adventure-4">
+							4
+						</div>
+					</div>
 				</div>
 				<!--end adventures-container-->
 				<a href="#">More Adventures</a>

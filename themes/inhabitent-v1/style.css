@@ -1110,6 +1110,50 @@ a.secondary-button {
         .entries-container .entry-box .entry-info h4 a:hover {
           color: #2f1339; }
 
+/* Front Page: Adventures */
+.adventures-container {
+  width: 1120px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.featured-adventure-1 {
+  width: 49%;
+  height: 520px;
+  margin-right: 10px;
+  background-color: aquamarine; }
+
+.adventures-right {
+  width: 49%;
+  height: 520px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.featured-adventure-2 {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 20px;
+  background-color: coral; }
+
+.featured-adventure-3 {
+  width: 48%;
+  height: 250px;
+  margin-right: 20px;
+  background-color: purple; }
+
+.featured-adventure-4 {
+  width: 48%;
+  height: 250px;
+  background-color: gold; }
+
 /* Shop: Product's Archive Page / Tax Page */
 .product-heading {
   width: 1120px;
@@ -1611,7 +1655,7 @@ a.secondary-button {
 .error404 .widget .screen-reader-text, .search-results .widget .screen-reader-text {
   display: none; }
 
-/*Search Results */
+/* Search Results */
 .search-results .site-content {
   padding-bottom: 0;
   width: 1120px;
