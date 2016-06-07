@@ -59,6 +59,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/
 /*=======================================*/
+/* Green Button */
+/* White Button */
+/* Two-Column Layout: Content Area and Sidebar */
+/* Journal: Entry Header Style */
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -848,7 +852,7 @@ a {
   .comments-area form .wpcf7-submit {
     width: auto;
     margin-bottom: 20px;
-    padding: 5px 24px;
+    padding: 6px 26px;
     display: inline-block;
     font-size: 0.9rem;
     color: #fff;
@@ -904,7 +908,7 @@ a {
 .form-submit input[type=submit], .form-submit .comments-area form textarea[type=submit], .comments-area form .form-submit textarea[type=submit], .form-submit .page-id-27 .wpcf7-form textarea[type=submit], .page-id-27 .wpcf7-form .form-submit textarea[type=submit] {
   width: auto;
   margin-bottom: 20px;
-  padding: 5px 24px;
+  padding: 6px 26px;
   display: inline-block;
   font-size: 0.9rem;
   color: #fff;
@@ -991,7 +995,7 @@ object {
   padding: 45px 0; }
 
 a.secondary-button {
-  padding: 10px 20px;
+  padding: 11px 23px;
   font-size: 0.9rem;
   color: #000;
   font-family: "Novecento", sans-serif;
@@ -1063,7 +1067,7 @@ a.secondary-button {
     .shop-cta div a {
       width: auto;
       margin-bottom: 20px;
-      padding: 5px 24px;
+      padding: 6px 26px;
       display: inline-block;
       font-size: 0.9rem;
       color: #fff;
@@ -1510,7 +1514,7 @@ a.secondary-button {
     .page-id-27 .wpcf7-form .wpcf7-submit {
       width: auto;
       margin-bottom: 20px;
-      padding: 5px 24px;
+      padding: 6px 26px;
       display: inline-block;
       font-size: 0.9rem;
       color: #fff;
@@ -1665,7 +1669,7 @@ a.secondary-button {
 .search-results .page-numbers {
   width: auto;
   margin-bottom: 20px;
-  padding: 5px 24px;
+  padding: 6px 26px;
   display: inline-block;
   font-size: 0.9rem;
   color: #fff;

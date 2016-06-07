@@ -13,19 +13,7 @@
 }
 
 a.secondary-button {
-  padding: 10px 20px;
-  font-size: 0.9rem;
-  color: $color_link-secondary-button;
-  font-family: $font_accent;
-  border: 1px solid $color_border-secondary-button;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 4rem;
-  &:hover {
-    color: $color_link-secondary-button-hover;
-    background-color: $color_bg-button;
-    border: 0;
-  }
+  @include secondary-button;
 }
 
 

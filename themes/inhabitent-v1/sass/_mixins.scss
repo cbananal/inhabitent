@@ -25,11 +25,12 @@
 	justify-content: center;
 }
 
-//Green Button
+/* Green Button */
+
 @mixin main-button {
 	  width: auto;
 	  margin-bottom: 20px;
-	  padding: 5px 24px;
+	  padding: 6px 26px;
 	  display: inline-block;
 	  font-size: 0.9rem;
 	  color: $color_text-button;
@@ -42,7 +43,27 @@
 	  }
 }
 
-//Two-Column Layout: Content Area and Sidebar
+/* White Button */
+
+@mixin secondary-button {
+	padding: 11px 23px;
+  font-size: 0.9rem;
+  color: $color_link-secondary-button;
+  font-family: $font_accent;
+  border: 1px solid $color_border-secondary-button;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 4rem;
+  &:hover {
+    color: $color_link-secondary-button-hover;
+    background-color: $color_bg-button;
+    border: 0;
+  }
+}
+
+
+/* Two-Column Layout: Content Area and Sidebar */
+
 @mixin two-columns{
 	.site-content {
 		padding-bottom: 0;
@@ -58,7 +79,6 @@
 
 	  padding: 0 5px 0 40px;
 	  .widget {
-	    // margin: 18px auto 20px;
 	    .widget-title {
 	      font-family: $font_accent;
 	    	text-transform: uppercase;
@@ -66,7 +86,6 @@
 	      font-size: 1.5rem;
 	      letter-spacing: 1px;
 	      padding: 30px 0 5px;
-				// padding: 0px 0 5px;
 	    }
 	    .contact-meta {
 	      width: 100%;
@@ -96,7 +115,9 @@
 	}
 }
 
-//Journal: Entry Header Style
+
+/* Journal: Entry Header Style */
+
 @mixin entry-header-style {
 	color: $color_text-title;
 	font-family: $font-accent;
