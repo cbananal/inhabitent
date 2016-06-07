@@ -61,6 +61,34 @@
   }
 }
 
+/* Featured Adventures */
+
+@mixin adventure-box-style {
+	padding: 10px 25px;
+	letter-spacing: 1px;
+	a:first-child {
+		font-weight: normal;
+		text-decoration: none;
+		color: $color_link-featured-adventures;
+		&:hover {
+			color: $color_link-featured-adventures-hover;
+		}
+	}
+	a:nth-child(2) {
+		font-size: 0.9rem;
+		padding: 11px 20px;
+		color: $color_link-featured-adventures-read-more;
+		font-family: $font_accent;
+		border: $border_adventures-read-more;
+		text-transform: uppercase;
+		text-decoration: none;
+		&:hover {
+			background-color: $color_bg-button;
+			border: 1px solid $border_adventures-read-more-hover;
+		}
+	}
+}
+
 
 /* Two-Column Layout: Content Area and Sidebar */
 
@@ -152,7 +180,7 @@
   }
   .entry-meta {
     @include entry-header-style;
-    min-width:60%;
+    min-width: 60%;
     max-width: auto;
     white-space: nowrap;
     padding: 0 15px;

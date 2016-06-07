@@ -59,22 +59,28 @@ get_header(); ?>
 				<h1>Latest Adventures</h1>
 				<div class="adventures-container">
 					<div class="featured-adventure-1">
-						1
+						<!-- <img src="<?php bloginfo('template_url')?>/images/adventure-photos/canoe-girl.jpg"> -->
+						<h2><a href="#">Getting Back to Nature in a Canoe</a></h2>
+						<a href="#">Read More</a>
 					</div>
-					<div class="adventures-right">
+					<div class="adventures-right-container">
 						<div class="featured-adventure-2">
-							2
+							<h3><a href="#">A Night with Friends at the Beach</a></h3>
+							<a href="#">Read More</a>
 						</div>
 						<div class="featured-adventure-3">
-							3
+							<h4><a href="#">Taking in the View at Big Mountain</a></h4>
+							<a href="#">Read More</a>
 						</div>
 						<div class="featured-adventure-4">
-							4
+							<h4><a href="#">Star-Gazing at the Night Sky</a></h4>
+							<a href="#">Read More</a>
 						</div>
 					</div>
+					<!--end adventures-right-container-->
 				</div>
 				<!--end adventures-container-->
-				<a href="#">More Adventures</a>
+				<a class="more-adventures-button" href="#">More Adventures</a>
 			</section>
 
 		</main><!-- #main -->

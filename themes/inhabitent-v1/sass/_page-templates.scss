@@ -27,7 +27,7 @@ a.secondary-button {
 }
 
 .home h1 {
-  font-size: 35px;
+  font-size: 38px;
   color: $color_text-heading;
   font-weight: normal;
   font-family: $font_accent;
@@ -132,48 +132,79 @@ a.secondary-button {
 
 /* Front Page: Adventures */
 
-.adventures-container {
+.featured-adventures {
   @include general-container;
+}
+.adventures-container {
+  margin-top: 55px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
 
 .featured-adventure-1 {
+  @include adventure-box-style;
   width: 49%;
   height: 520px;
   margin-right: 10px;
   background-color: aquamarine;
+  h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
 }
 
-.adventures-right {
+.adventures-right-container {
   width: 49%;
   height: 520px;
-  // background-color: lime;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
 
 .featured-adventure-2 {
+  @include adventure-box-style;
   width: 100%;
   height: 250px;
   margin-bottom: 20px;
   background-color: coral;
+  h3 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
 }
 
 .featured-adventure-3 {
+  @include adventure-box-style;
   width: 48%;
   height: 250px;
   margin-right: 20px;
   background-color: purple;
-
+  h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 .featured-adventure-4 {
+  @include adventure-box-style;
   width: 48%;
   height: 250px;
   background-color: gold;
+  h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.more-adventures-button {
+  @include main-button;
+  margin-top: 25px;
+  padding: 10px 25px;
+  font-size: 1.2rem;
+  &:hover, &:visited {
+    color: $color_link-more-adventures-hover;
+  }
 }
 
 
