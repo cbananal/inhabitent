@@ -77,6 +77,7 @@ textarea {
 		input {
 			font-family: $font_main;
 			background-color: $color_bg-form-input;
+			border: $border_solid;
 			border-radius: 0;
 		}
 		textarea {
