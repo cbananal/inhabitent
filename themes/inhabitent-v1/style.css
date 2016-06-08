@@ -1881,6 +1881,9 @@ a.secondary-button {
     .search-results .widget-area .widget a:hover {
       color: #2f1339; }
 
+.search-results article {
+  margin-bottom: 60px; }
+
 .search-results .content-area {
   padding: 0 40px 50px 0; }
   .search-results .content-area .page-title {
@@ -1892,6 +1895,15 @@ a.secondary-button {
   font-family: "Novecento", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px; }
+
+.search-results .entry-meta {
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase; }
+
+.search-results .secondary-button {
+  color: #000; }
+  .search-results .secondary-button:hover {
+    color: #fff; }
 
 .search-results .page-numbers {
   width: auto;

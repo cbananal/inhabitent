@@ -333,6 +333,7 @@ a.secondary-button {
 
 
 /* Journal: Single */
+
 .single-post{
   @include journal-structure;
   .content-area {
@@ -420,7 +421,6 @@ a.secondary-button {
     text-transform: uppercase;
     color: $color_text-heading;
   }
-
   .wpcf7-form {
     @include form;
   }
@@ -472,6 +472,9 @@ a.secondary-button {
 .search-results {
   @include two-columns;
   @extend .error404;
+  article {
+    margin-bottom: 60px;
+  }
   .content-area {
     padding: 0 40px 50px 0;
     .page-title {
@@ -485,6 +488,18 @@ a.secondary-button {
     text-transform: uppercase;
     letter-spacing: 2px;
   }
+  .entry-meta {
+    font-family: $font-accent;
+    text-transform: uppercase;
+  }
+
+  .secondary-button {
+    color: $color_link-secondary-button;
+    &:hover {
+      color: $color_link-secondary-button-hover
+    }
+  }
+
   .page-numbers {
     @include main-button;
     padding: 5px 15px;
@@ -519,6 +534,7 @@ a.secondary-button {
     padding-top: 50px;
   }
 }
+
 
 /* Monthly Archive */
 
