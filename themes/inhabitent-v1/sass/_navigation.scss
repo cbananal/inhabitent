@@ -157,8 +157,6 @@ a {
 }
 
 .main-nav-container {
-	// width: 1120px;
-	// margin: 0px auto;
 	@include general-container;
 	padding: 5px 0;
 	display: flex;
@@ -179,7 +177,6 @@ a {
       color: $color_link-main-nav-hover;
     }
   }
-  // align-self: center;
 }
 
 /* Search Bar */
@@ -212,13 +209,16 @@ a {
 	}
 }
 
-input.search-field {
+.main-navigation {
+	input.search-field {
+	width: auto;
 	font-family: $font_accent;
 	background: initial;
 	border: 0;
 	text-transform: uppercase;
 	outline-style: none;
-	// display: none;
+	display: none;
+	}
 }
 
 ::-webkit-input-placeholder {

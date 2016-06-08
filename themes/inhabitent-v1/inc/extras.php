@@ -66,6 +66,14 @@ function inhabitent_font_awesome(){
 }
 add_action('wp_enqueue_scripts','inhabitent_font_awesome');
 
+
+//Shows/Hides Search Bar on Main Navigation
+function inhabitent_search_bar_js() {
+	wp_enqueue_script('search-bar', get_template_directory_uri() . '/js/search-bar.js');
+};
+add_action('wp_enqueue_scripts', 'inhabitent_search_bar_js');
+
+
 //Add Background Image on About
 function inhabitent_about_bg() {
 			if (!is_page_template ('about.php')) {

@@ -806,12 +806,14 @@ a {
   .search-submit:focus {
     outline-style: none; }
 
-input.search-field, .comments-area form textarea.search-field, .page-id-27 .wpcf7-form textarea.search-field, .error404 .page-content fieldset textarea.search-field, .search-results .page-content fieldset textarea.search-field, .search-no-results .content-area .search-form textarea.search-field {
+.main-navigation input.search-field, .main-navigation .comments-area form textarea.search-field, .comments-area form .main-navigation textarea.search-field, .main-navigation .page-id-27 .wpcf7-form textarea.search-field, .page-id-27 .wpcf7-form .main-navigation textarea.search-field, .main-navigation .error404 .page-content fieldset textarea.search-field, .error404 .page-content fieldset .main-navigation textarea.search-field, .main-navigation .search-results .page-content fieldset textarea.search-field, .search-results .page-content fieldset .main-navigation textarea.search-field, .main-navigation .search-no-results .content-area .search-form textarea.search-field, .search-no-results .content-area .search-form .main-navigation textarea.search-field {
+  width: auto;
   font-family: "Novecento", sans-serif;
   background: initial;
   border: 0;
   text-transform: uppercase;
-  outline-style: none; }
+  outline-style: none;
+  display: none; }
 
 ::-webkit-input-placeholder {
   color: #808080; }
