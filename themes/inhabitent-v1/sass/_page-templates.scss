@@ -437,8 +437,12 @@ a.secondary-button {
     text-transform: uppercase;
     letter-spacing: 2px;
   }
-  fieldset {
+  .page-content fieldset {
+    @include form;
     border: 0;
+    .search-field {
+      text-transform: none;
+    }
     button {
       display: none;
     }
@@ -472,6 +476,9 @@ a.secondary-button {
 .search-results {
   @include two-columns;
   @extend .error404;
+  fieldset button {
+    display: inline-block;
+  }
   article {
     margin-bottom: 60px;
   }
@@ -532,6 +539,9 @@ a.secondary-button {
     margin-top: 60px;
     border-top: $border_solid;
     padding-top: 50px;
+    .search-field {
+      text-transform: none;
+    }
   }
 }
 
