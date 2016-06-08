@@ -501,6 +501,24 @@ a.secondary-button {
   }
 }
 
+.search-no-results {
+  @include two-columns;
+  .content-area{
+    padding-right: 40px;
+  }
+  .widget-area {
+    margin-bottom: 40px;
+  }
+  .content-area .search-submit {
+    display: none;
+  }
+  .content-area .search-form {
+    @include form;
+    margin-top: 60px;
+    border-top: $border_solid;
+    padding-top: 50px;
+  }
+}
 
 /* Monthly Archive */
 

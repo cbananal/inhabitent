@@ -170,6 +170,7 @@ button,
 input,
 .comments-area form textarea,
 .page-id-27 .wpcf7-form textarea,
+.search-no-results .content-area .search-form textarea,
 optgroup,
 select,
 textarea {
@@ -190,12 +191,16 @@ html .comments-area form textarea[type="button"], .comments-area form
 html textarea[type="button"],
 html .page-id-27 .wpcf7-form textarea[type="button"], .page-id-27 .wpcf7-form
 html textarea[type="button"],
+html .search-no-results .content-area .search-form textarea[type="button"], .search-no-results .content-area .search-form
+html textarea[type="button"],
 input[type="reset"],
 .comments-area form textarea[type="reset"],
 .page-id-27 .wpcf7-form textarea[type="reset"],
+.search-no-results .content-area .search-form textarea[type="reset"],
 input[type="submit"],
 .comments-area form textarea[type="submit"],
-.page-id-27 .wpcf7-form textarea[type="submit"] {
+.page-id-27 .wpcf7-form textarea[type="submit"],
+.search-no-results .content-area .search-form textarea[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer; }
 
@@ -204,40 +209,46 @@ html input[disabled],
 html .comments-area form textarea[disabled], .comments-area form
 html textarea[disabled],
 html .page-id-27 .wpcf7-form textarea[disabled], .page-id-27 .wpcf7-form
+html textarea[disabled],
+html .search-no-results .content-area .search-form textarea[disabled], .search-no-results .content-area .search-form
 html textarea[disabled] {
   cursor: default; }
 
 button::-moz-focus-inner,
 input::-moz-focus-inner,
 .comments-area form textarea::-moz-focus-inner,
-.page-id-27 .wpcf7-form textarea::-moz-focus-inner {
+.page-id-27 .wpcf7-form textarea::-moz-focus-inner,
+.search-no-results .content-area .search-form textarea::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-input, .comments-area form textarea, .page-id-27 .wpcf7-form textarea {
+input, .comments-area form textarea, .page-id-27 .wpcf7-form textarea, .search-no-results .content-area .search-form textarea {
   line-height: normal; }
 
-input[type="checkbox"], .comments-area form textarea[type="checkbox"], .page-id-27 .wpcf7-form textarea[type="checkbox"],
+input[type="checkbox"], .comments-area form textarea[type="checkbox"], .page-id-27 .wpcf7-form textarea[type="checkbox"], .search-no-results .content-area .search-form textarea[type="checkbox"],
 input[type="radio"],
 .comments-area form textarea[type="radio"],
-.page-id-27 .wpcf7-form textarea[type="radio"] {
+.page-id-27 .wpcf7-form textarea[type="radio"],
+.search-no-results .content-area .search-form textarea[type="radio"] {
   box-sizing: border-box;
   padding: 0; }
 
-input[type="number"]::-webkit-inner-spin-button, .comments-area form textarea[type="number"]::-webkit-inner-spin-button, .page-id-27 .wpcf7-form textarea[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-inner-spin-button, .comments-area form textarea[type="number"]::-webkit-inner-spin-button, .page-id-27 .wpcf7-form textarea[type="number"]::-webkit-inner-spin-button, .search-no-results .content-area .search-form textarea[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button,
 .comments-area form textarea[type="number"]::-webkit-outer-spin-button,
-.page-id-27 .wpcf7-form textarea[type="number"]::-webkit-outer-spin-button {
+.page-id-27 .wpcf7-form textarea[type="number"]::-webkit-outer-spin-button,
+.search-no-results .content-area .search-form textarea[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
-input[type="search"], .comments-area form textarea[type="search"], .page-id-27 .wpcf7-form textarea[type="search"] {
+input[type="search"], .comments-area form textarea[type="search"], .page-id-27 .wpcf7-form textarea[type="search"], .search-no-results .content-area .search-form textarea[type="search"] {
   -webkit-appearance: textfield;
   box-sizing: content-box; }
 
-input[type="search"]::-webkit-search-cancel-button, .comments-area form textarea[type="search"]::-webkit-search-cancel-button, .page-id-27 .wpcf7-form textarea[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-cancel-button, .comments-area form textarea[type="search"]::-webkit-search-cancel-button, .page-id-27 .wpcf7-form textarea[type="search"]::-webkit-search-cancel-button, .search-no-results .content-area .search-form textarea[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration,
 .comments-area form textarea[type="search"]::-webkit-search-decoration,
-.page-id-27 .wpcf7-form textarea[type="search"]::-webkit-search-decoration {
+.page-id-27 .wpcf7-form textarea[type="search"]::-webkit-search-decoration,
+.search-no-results .content-area .search-form textarea[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
@@ -319,6 +330,7 @@ button,
 input,
 .comments-area form textarea,
 .page-id-27 .wpcf7-form textarea,
+.search-no-results .content-area .search-form textarea,
 select,
 textarea {
   color: #404040;
@@ -445,12 +457,15 @@ button,
 input[type="button"],
 .comments-area form textarea[type="button"],
 .page-id-27 .wpcf7-form textarea[type="button"],
+.search-no-results .content-area .search-form textarea[type="button"],
 input[type="reset"],
 .comments-area form textarea[type="reset"],
 .page-id-27 .wpcf7-form textarea[type="reset"],
+.search-no-results .content-area .search-form textarea[type="reset"],
 input[type="submit"],
 .comments-area form textarea[type="submit"],
-.page-id-27 .wpcf7-form textarea[type="submit"] {
+.page-id-27 .wpcf7-form textarea[type="submit"],
+.search-no-results .content-area .search-form textarea[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
@@ -466,83 +481,104 @@ input[type="submit"],
   input[type="button"]:hover,
   .comments-area form textarea[type="button"]:hover,
   .page-id-27 .wpcf7-form textarea[type="button"]:hover,
+  .search-no-results .content-area .search-form textarea[type="button"]:hover,
   input[type="reset"]:hover,
   .comments-area form textarea[type="reset"]:hover,
   .page-id-27 .wpcf7-form textarea[type="reset"]:hover,
+  .search-no-results .content-area .search-form textarea[type="reset"]:hover,
   input[type="submit"]:hover,
   .comments-area form textarea[type="submit"]:hover,
-  .page-id-27 .wpcf7-form textarea[type="submit"]:hover {
+  .page-id-27 .wpcf7-form textarea[type="submit"]:hover,
+  .search-no-results .content-area .search-form textarea[type="submit"]:hover {
     border-color: #ccc #bbb #aaa;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
   button:active, button:focus,
   input[type="button"]:active,
   .comments-area form textarea[type="button"]:active,
   .page-id-27 .wpcf7-form textarea[type="button"]:active,
+  .search-no-results .content-area .search-form textarea[type="button"]:active,
   input[type="button"]:focus,
   .comments-area form textarea[type="button"]:focus,
   .page-id-27 .wpcf7-form textarea[type="button"]:focus,
+  .search-no-results .content-area .search-form textarea[type="button"]:focus,
   input[type="reset"]:active,
   .comments-area form textarea[type="reset"]:active,
   .page-id-27 .wpcf7-form textarea[type="reset"]:active,
+  .search-no-results .content-area .search-form textarea[type="reset"]:active,
   input[type="reset"]:focus,
   .comments-area form textarea[type="reset"]:focus,
   .page-id-27 .wpcf7-form textarea[type="reset"]:focus,
+  .search-no-results .content-area .search-form textarea[type="reset"]:focus,
   input[type="submit"]:active,
   .comments-area form textarea[type="submit"]:active,
   .page-id-27 .wpcf7-form textarea[type="submit"]:active,
+  .search-no-results .content-area .search-form textarea[type="submit"]:active,
   input[type="submit"]:focus,
   .comments-area form textarea[type="submit"]:focus,
-  .page-id-27 .wpcf7-form textarea[type="submit"]:focus {
+  .page-id-27 .wpcf7-form textarea[type="submit"]:focus,
+  .search-no-results .content-area .search-form textarea[type="submit"]:focus {
     border-color: #aaa #bbb #bbb;
     box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
 
 /* Fields */
-input[type="text"], .comments-area form textarea[type="text"], .page-id-27 .wpcf7-form textarea[type="text"],
+input[type="text"], .comments-area form textarea[type="text"], .page-id-27 .wpcf7-form textarea[type="text"], .search-no-results .content-area .search-form textarea[type="text"],
 input[type="email"],
 .comments-area form textarea[type="email"],
 .page-id-27 .wpcf7-form textarea[type="email"],
+.search-no-results .content-area .search-form textarea[type="email"],
 input[type="url"],
 .comments-area form textarea[type="url"],
 .page-id-27 .wpcf7-form textarea[type="url"],
+.search-no-results .content-area .search-form textarea[type="url"],
 input[type="password"],
 .comments-area form textarea[type="password"],
 .page-id-27 .wpcf7-form textarea[type="password"],
+.search-no-results .content-area .search-form textarea[type="password"],
 input[type="search"],
 .comments-area form textarea[type="search"],
 .page-id-27 .wpcf7-form textarea[type="search"],
+.search-no-results .content-area .search-form textarea[type="search"],
 textarea {
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px; }
-  input[type="text"]:focus, .comments-area form textarea[type="text"]:focus, .page-id-27 .wpcf7-form textarea[type="text"]:focus,
+  input[type="text"]:focus, .comments-area form textarea[type="text"]:focus, .page-id-27 .wpcf7-form textarea[type="text"]:focus, .search-no-results .content-area .search-form textarea[type="text"]:focus,
   input[type="email"]:focus,
   .comments-area form textarea[type="email"]:focus,
   .page-id-27 .wpcf7-form textarea[type="email"]:focus,
+  .search-no-results .content-area .search-form textarea[type="email"]:focus,
   input[type="url"]:focus,
   .comments-area form textarea[type="url"]:focus,
   .page-id-27 .wpcf7-form textarea[type="url"]:focus,
+  .search-no-results .content-area .search-form textarea[type="url"]:focus,
   input[type="password"]:focus,
   .comments-area form textarea[type="password"]:focus,
   .page-id-27 .wpcf7-form textarea[type="password"]:focus,
+  .search-no-results .content-area .search-form textarea[type="password"]:focus,
   input[type="search"]:focus,
   .comments-area form textarea[type="search"]:focus,
   .page-id-27 .wpcf7-form textarea[type="search"]:focus,
+  .search-no-results .content-area .search-form textarea[type="search"]:focus,
   textarea:focus {
     color: #111; }
 
-input[type="text"], .comments-area form textarea[type="text"], .page-id-27 .wpcf7-form textarea[type="text"],
+input[type="text"], .comments-area form textarea[type="text"], .page-id-27 .wpcf7-form textarea[type="text"], .search-no-results .content-area .search-form textarea[type="text"],
 input[type="email"],
 .comments-area form textarea[type="email"],
 .page-id-27 .wpcf7-form textarea[type="email"],
+.search-no-results .content-area .search-form textarea[type="email"],
 input[type="url"],
 .comments-area form textarea[type="url"],
 .page-id-27 .wpcf7-form textarea[type="url"],
+.search-no-results .content-area .search-form textarea[type="url"],
 input[type="password"],
 .comments-area form textarea[type="password"],
 .page-id-27 .wpcf7-form textarea[type="password"],
+.search-no-results .content-area .search-form textarea[type="password"],
 input[type="search"],
 .comments-area form textarea[type="search"],
-.page-id-27 .wpcf7-form textarea[type="search"] {
+.page-id-27 .wpcf7-form textarea[type="search"],
+.search-no-results .content-area .search-form textarea[type="search"] {
   padding: 3px; }
 
 textarea {
@@ -698,7 +734,7 @@ a {
   .search-submit:focus {
     outline-style: none; }
 
-input.search-field, .comments-area form textarea.search-field, .page-id-27 .wpcf7-form textarea.search-field {
+input.search-field, .comments-area form textarea.search-field, .page-id-27 .wpcf7-form textarea.search-field, .search-no-results .content-area .search-form textarea.search-field {
   font-family: "Novecento", sans-serif;
   background: initial;
   border: 0;
@@ -881,7 +917,7 @@ input.search-field, .comments-area form textarea.search-field, .page-id-27 .wpcf
   text-transform: uppercase; }
   .comments-area form span {
     color: #d99054; }
-  .comments-area form input, .comments-area form textarea, .comments-area form .page-id-27 .wpcf7-form textarea, .page-id-27 .wpcf7-form .comments-area form textarea {
+  .comments-area form input, .comments-area form textarea, .comments-area form .page-id-27 .wpcf7-form textarea, .page-id-27 .wpcf7-form .comments-area form textarea, .comments-area form .search-no-results .content-area .search-form textarea, .search-no-results .content-area .search-form .comments-area form textarea {
     font-family: "Merriweather", serif;
     background-color: #f4f4f4;
     border: 1px solid #e1e1e1;
@@ -917,7 +953,7 @@ input.search-field, .comments-area form textarea.search-field, .page-id-27 .wpcf
     font-family: "Merriweather", serif;
     text-transform: initial;
     color: #404040; }
-  .comments-area form input, .comments-area form textarea, .comments-area form .page-id-27 .wpcf7-form textarea, .page-id-27 .wpcf7-form .comments-area form textarea {
+  .comments-area form input, .comments-area form textarea, .comments-area form .page-id-27 .wpcf7-form textarea, .page-id-27 .wpcf7-form .comments-area form textarea, .comments-area form .search-no-results .content-area .search-form textarea, .search-no-results .content-area .search-form .comments-area form textarea {
     padding: 8px;
     margin-top: 10px; }
 
@@ -927,7 +963,7 @@ input.search-field, .comments-area form textarea.search-field, .page-id-27 .wpcf
   display: inline-block; }
   .comment-form-author label, .comment-form-email label {
     display: inline; }
-  .comment-form-author input, .comment-form-author .comments-area form textarea, .comments-area form .comment-form-author textarea, .comment-form-author .page-id-27 .wpcf7-form textarea, .page-id-27 .wpcf7-form .comment-form-author textarea, .comment-form-email input, .comment-form-email .comments-area form textarea, .comments-area form .comment-form-email textarea, .comment-form-email .page-id-27 .wpcf7-form textarea, .page-id-27 .wpcf7-form .comment-form-email textarea {
+  .comment-form-author input, .comment-form-author .comments-area form textarea, .comments-area form .comment-form-author textarea, .comment-form-author .page-id-27 .wpcf7-form textarea, .page-id-27 .wpcf7-form .comment-form-author textarea, .comment-form-author .search-no-results .content-area .search-form textarea, .search-no-results .content-area .search-form .comment-form-author textarea, .comment-form-email input, .comment-form-email .comments-area form textarea, .comments-area form .comment-form-email textarea, .comment-form-email .page-id-27 .wpcf7-form textarea, .page-id-27 .wpcf7-form .comment-form-email textarea, .comment-form-email .search-no-results .content-area .search-form textarea, .search-no-results .content-area .search-form .comment-form-email textarea {
     width: 100%; }
 
 .comment-form-author {
@@ -939,10 +975,10 @@ input.search-field, .comments-area form textarea.search-field, .page-id-27 .wpcf
 .comment-form-url {
   margin-top: 0;
   width: 100%; }
-  .comment-form-url input, .comment-form-url .comments-area form textarea, .comments-area form .comment-form-url textarea, .comment-form-url .page-id-27 .wpcf7-form textarea, .page-id-27 .wpcf7-form .comment-form-url textarea {
+  .comment-form-url input, .comment-form-url .comments-area form textarea, .comments-area form .comment-form-url textarea, .comment-form-url .page-id-27 .wpcf7-form textarea, .page-id-27 .wpcf7-form .comment-form-url textarea, .comment-form-url .search-no-results .content-area .search-form textarea, .search-no-results .content-area .search-form .comment-form-url textarea {
     width: 100%; }
 
-.form-submit input[type=submit], .form-submit .comments-area form textarea[type=submit], .comments-area form .form-submit textarea[type=submit], .form-submit .page-id-27 .wpcf7-form textarea[type=submit], .page-id-27 .wpcf7-form .form-submit textarea[type=submit] {
+.form-submit input[type=submit], .form-submit .comments-area form textarea[type=submit], .comments-area form .form-submit textarea[type=submit], .form-submit .page-id-27 .wpcf7-form textarea[type=submit], .page-id-27 .wpcf7-form .form-submit textarea[type=submit], .form-submit .search-no-results .content-area .search-form textarea[type=submit], .search-no-results .content-area .search-form .form-submit textarea[type=submit] {
   width: auto;
   margin-bottom: 20px;
   padding: 6px 26px;
@@ -958,7 +994,7 @@ input.search-field, .comments-area form textarea.search-field, .page-id-27 .wpcf
   background-color: #248A83;
   text-shadow: 0 0;
   box-shadow: 0 0; }
-  .form-submit input[type=submit]:hover, .form-submit .comments-area form textarea[type=submit]:hover, .comments-area form .form-submit textarea[type=submit]:hover, .form-submit .page-id-27 .wpcf7-form textarea[type=submit]:hover, .page-id-27 .wpcf7-form .form-submit textarea[type=submit]:hover {
+  .form-submit input[type=submit]:hover, .form-submit .comments-area form textarea[type=submit]:hover, .comments-area form .form-submit textarea[type=submit]:hover, .form-submit .page-id-27 .wpcf7-form textarea[type=submit]:hover, .page-id-27 .wpcf7-form .form-submit textarea[type=submit]:hover, .form-submit .search-no-results .content-area .search-form textarea[type=submit]:hover, .search-no-results .content-area .search-form .form-submit textarea[type=submit]:hover {
     background-color: #19625d; }
 
 /*--------------------------------------------------------------
@@ -1697,7 +1733,7 @@ a.secondary-button {
     text-transform: uppercase; }
     .page-id-27 .wpcf7-form span {
       color: #d99054; }
-    .page-id-27 .wpcf7-form input, .page-id-27 .wpcf7-form textarea {
+    .page-id-27 .wpcf7-form input, .page-id-27 .wpcf7-form textarea, .page-id-27 .wpcf7-form .search-no-results .content-area .search-form textarea, .search-no-results .content-area .search-form .page-id-27 .wpcf7-form textarea {
       font-family: "Merriweather", serif;
       background-color: #f4f4f4;
       border: 1px solid #e1e1e1;
@@ -1879,6 +1915,99 @@ a.secondary-button {
   background-color: #808080; }
   .search-results .current:hover {
     background-color: #808080; }
+
+.search-no-results .site-content {
+  padding-bottom: 0;
+  width: 1120px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .search-no-results .site-content .content-area {
+    width: 85%;
+    border-right: 1px solid #e1e1e1; }
+
+.search-no-results .widget-area {
+  width: 30%;
+  padding: 0 5px 0 40px; }
+  .search-no-results .widget-area .widget .widget-title {
+    font-family: "Novecento", sans-serif;
+    text-transform: uppercase;
+    color: #2f1339;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding: 30px 0 5px; }
+  .search-no-results .widget-area .widget .contact-meta {
+    width: 100%;
+    height: auto;
+    display: -ms-flexbox;
+    display: flex; }
+    .search-no-results .widget-area .widget .contact-meta i {
+      width: 35px;
+      padding-top: 5px; }
+  .search-no-results .widget-area .widget .day-of-week {
+    font-weight: bold; }
+  .search-no-results .widget-area .widget ul {
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none; }
+  .search-no-results .widget-area .widget a {
+    color: #248A83;
+    text-decoration: none; }
+    .search-no-results .widget-area .widget a:hover {
+      color: #2f1339; }
+
+.search-no-results .content-area {
+  padding-right: 40px; }
+
+.search-no-results .widget-area {
+  margin-bottom: 40px; }
+
+.search-no-results .content-area .search-submit {
+  display: none; }
+
+.search-no-results .content-area .search-form {
+  font-size: 1.1rem;
+  color: #2f1339;
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase;
+  margin-top: 60px;
+  border-top: 1px solid #e1e1e1;
+  padding-top: 50px; }
+  .search-no-results .content-area .search-form span {
+    color: #d99054; }
+  .search-no-results .content-area .search-form input, .search-no-results .content-area .search-form textarea {
+    font-family: "Merriweather", serif;
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    border-radius: 0; }
+  .search-no-results .content-area .search-form .wpcf7-submit {
+    width: auto;
+    margin-bottom: 20px;
+    padding: 6px 26px;
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #248A83;
+    font-family: "Novecento", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 12px 25px;
+    box-shadow: none;
+    text-shadow: none;
+    border: 0; }
+    .search-no-results .content-area .search-form .wpcf7-submit:hover {
+      background-color: #19625d; }
+  .search-no-results .content-area .search-form .wpcf7-not-valid-tip {
+    font-size: 16px;
+    font-family: "Merriweather", serif;
+    text-transform: initial;
+    color: red; }
+  .search-no-results .content-area .search-form .wpcf7-response-output {
+    font-size: 16px;
+    font-family: "Merriweather", serif;
+    text-transform: initial; }
 
 /* Monthly Archive */
 .date .content-area {
