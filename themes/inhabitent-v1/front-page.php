@@ -42,8 +42,8 @@ get_header(); ?>
 					    <!-- //Content from your array of posts go here. -->
 							<div class="entry-box">
 									<?php the_post_thumbnail(); ?>
-								<div class="entry-info"
-									<p><?php the_date('j F Y') ?> / <?php echo comments_number(); ?></p>
+								<div class="entry-info">
+									<p><?php the_date('j F Y') ?> &#47; <?php echo comments_number(); ?></p>
 									<h4><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
 									<a class="secondary-button" href="<?php echo get_permalink(); ?>">Read Entry</a>
 								</div>

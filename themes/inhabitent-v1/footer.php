@@ -23,15 +23,15 @@
 					<div class="schedule">
 						<h4>Business Hours</h4>
 						<p><span class="day">Monday-Friday: </span> 9am to 5pm</p>
-						<span class="day">Saturday:</span> 10am to 2pm</p>
-						<span class="day">Sunday:</span> Closed</p>
+						<p><span class="day">Saturday:</span> 10am to 2pm</p>
+						<p><span class="day">Sunday:</span> Closed</p>
 					</div>
 					<!--end schedule-->
 					<img src="<?php bloginfo('template_url')?>/images/logos/inhabitent-logo-text.svg" alt="Inhabitent Logo">
 				</div>
 				<!--end footer-container-->
 				<div class="site-info">
-					<p>Copyright &copy <?php echo date('Y'); ?> <?php bloginfo ('name')?></p>
+					<p>Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo ('name')?></p>
 					<!-- <a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a> -->
 				</div>
 				<!-- .site-info -->
