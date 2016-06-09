@@ -21,7 +21,7 @@ get_header(); ?>
 				<div class="shop-cta">
 					<?php foreach ($terms as $term) : ?>
 						<div>
-							<img src="<?php echo get_template_directory_uri() ?>/images/product-type-icons/<?php echo $term->slug ?>.svg">
+							<img src="<?php echo get_template_directory_uri() ?>/images/product-type-icons/<?php echo $term->slug ?>.svg" alt="Inhabitent Logo">
 							<p><?php echo $term->description ?></p>
 							<a href="<?php echo get_term_link($term, 'product-type') ?>"><?php echo $term->name?> Stuff</a>
 						</div>
@@ -59,7 +59,6 @@ get_header(); ?>
 				<h1>Latest Adventures</h1>
 				<div class="adventures-container">
 					<div class="featured-adventure-1">
-						<!-- <img src="<?php bloginfo('template_url')?>/images/adventure-photos/canoe-girl.jpg"> -->
 						<h2><a href="#">Getting Back to Nature in a Canoe</a></h2>
 						<a href="#">Read More</a>
 					</div>
