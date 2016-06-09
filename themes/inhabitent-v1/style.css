@@ -747,16 +747,21 @@ a {
   position: fixed;
   background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
   z-index: 3; }
-
-.site-header h1 {
-  width: 50px;
-  height: 35px;
-  margin: 0;
-  background: url("../../images/logos/inhabitent-logo-tent.svg") no-repeat;
-  background-size: 50px 35px;
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap; }
+  .site-header h1 {
+    width: 50px;
+    height: 35px;
+    margin: 0;
+    background: url("../../images/logos/inhabitent-logo-tent.svg") no-repeat;
+    background-size: 50px 35px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap; }
+  .site-header .main-navigation a {
+    color: #248A83; }
+    .site-header .main-navigation a:hover {
+      color: #2f1339; }
+  .site-header ::-webkit-input-placeholder {
+    color: #808080; }
 
 .main-nav-container {
   width: 1120px;
@@ -777,11 +782,8 @@ a {
       align-items: center; }
   .main-navigation a {
     padding: 0 15px;
-    color: #248A83;
     font-family: "Novecento", sans-serif;
     text-transform: uppercase; }
-    .main-navigation a:hover {
-      color: #2f1339; }
 
 /* Search Bar */
 .search-form fieldset {
@@ -814,9 +816,6 @@ a {
   text-transform: uppercase;
   outline-style: none;
   display: none; }
-
-::-webkit-input-placeholder {
-  color: #808080; }
 
 /*--------------------------------------------------------------
 # Accessibility
