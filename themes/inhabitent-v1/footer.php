@@ -13,7 +13,7 @@
 				<div class="footer-container">
 					<div class="contact">
 						<h4>Contact Info</h4>
-						<p><span class="footer-icon fa fa-envelope fa-lg"></span><a href="mailto: info@inhabitent.com">info@inhabitent.com</a></p>
+						<p><span class="footer-icon fa fa-envelope fa-lg"></span><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></p>
 						<p><span class="footer-icon fa fa-phone fa-lg"></span>778-456-7891</p>
 						<a class="footer-icon" href="#"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a>
 						<a class="footer-icon" href="#"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i></a>
@@ -27,7 +27,7 @@
 						<span class="day">Sunday:</span> Closed</p>
 					</div>
 					<!--end schedule-->
-					<img src="<?php bloginfo('template_url')?>/images/logos/inhabitent-logo-text.svg">
+					<img src="<?php bloginfo('template_url')?>/images/logos/inhabitent-logo-text.svg" alt="Inhabitent Logo">
 				</div>
 				<!--end footer-container-->
 				<div class="site-info">
