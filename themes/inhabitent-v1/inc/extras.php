@@ -60,13 +60,6 @@ function inhabitent_remove_submenus() {
 add_action( 'admin_init', 'inhabitent_remove_submenus', 102 );
 
 
-//Link Font-Awesome Stylesheet
-function inhabitent_font_awesome(){
-	wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/font-awesome/css/font-awesome.css');
-}
-add_action('wp_enqueue_scripts','inhabitent_font_awesome');
-
-
 //Shows/Hides Search Bar on Main Navigation
 function inhabitent_search_bar_js() {
 	wp_enqueue_script('search-bar', get_template_directory_uri() . '/js/search-bar.js');
