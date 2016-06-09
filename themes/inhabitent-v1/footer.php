@@ -27,7 +27,7 @@
 						<p><span class="day">Sunday:</span> Closed</p>
 					</div>
 					<!--end schedule-->
-					<img src="<?php bloginfo('template_url')?>/images/logos/inhabitent-logo-text.svg" alt="Inhabitent Logo">
+					<img src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-text.svg" alt="Inhabitent Logo">
 				</div>
 				<!--end footer-container-->
 				<div class="site-info">

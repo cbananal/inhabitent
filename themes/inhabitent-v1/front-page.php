@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section class="hero-container">
-				<img src="<?php bloginfo('template_url')?>/images/logos/inhabitent-logo-full.svg" alt ="Inhabitent Logo">
+				<img src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-full.svg" alt ="Inhabitent Logo">
 			</section>
 			<!--end hero-container-->
 			<?php $terms = get_terms('product-type'); ?>
