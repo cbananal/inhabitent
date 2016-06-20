@@ -7,6 +7,7 @@ An e-commerce site on Wordpress which makes use of Underscores as a starter them
 * SASS
 * PHP
 * Wordpress
+* MAMP / Gulp
 
 ##Experience / Learning Outcomes
 I have tried dabbling with Wordpress once before this project but I can say that it is only now that I have truly learned it in-depth and discovered how powerful it is.
