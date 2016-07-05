@@ -1130,31 +1130,9 @@ object {
 .gallery-caption {
   display: block; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/
 /*=======================================*/
-/*------- Shared Classes -----*/
-.site-content {
-  padding: 45px 0; }
-
-a.secondary-button {
-  padding: 11px 23px;
-  font-size: 0.9rem;
-  color: #000;
-  font-family: "Novecento", sans-serif;
-  border: 1px solid #000;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 4rem; }
-  a.secondary-button:hover {
-    color: #fff;
-    background-color: #248A83;
-    border: 0; }
-
-/*------- Custom/Individual Templates -----*/
 /* Front Page: Shared Styles  */
 .home .site-content {
   padding-top: 0; }
@@ -1418,6 +1396,31 @@ a.secondary-button {
   .more-adventures-button:hover, .more-adventures-button:visited {
     color: #fff; }
 
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+/*=======================================*/
+/*------ Inhabitent: Custom Styles ------*/
+/*=======================================*/
+/*------- Shared Classes -----*/
+.site-content {
+  padding: 45px 0; }
+
+a.secondary-button {
+  padding: 11px 23px;
+  font-size: 0.9rem;
+  color: #000;
+  font-family: "Novecento", sans-serif;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 4rem; }
+  a.secondary-button:hover {
+    color: #fff;
+    background-color: #248A83;
+    border: 0; }
+
+/*------- Custom/Individual Templates -----*/
 /* Shop: Product's Archive Page / Tax Page */
 .product-heading {
   width: 1120px;
