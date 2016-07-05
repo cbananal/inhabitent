@@ -1,5 +1,5 @@
 #Inhabitent Camping Supply Co.
-A custom Wordpress theme for an e-commerce mock-up site based on the starter theme [Underscores] (https://www.underscores.me). The site features custom post types, fields, widgets and taxonomies.
+A custom Wordpress theme for an e-commerce mock-up site based on the starter theme [Underscores] (http://www.underscores.me). The site features custom post types, fields, widgets and taxonomies.
 
 ###Tools and Languages Used
 * HTML5 / CSS3
