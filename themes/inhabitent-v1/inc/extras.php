@@ -30,7 +30,7 @@ add_filter( 'body_class', 'red_starter_body_classes' );
 //Customize WP Login Screen
 function inhabitent_custom_login() {
 	echo '<link rel="stylesheet" type="text/css" href=" ' .
-	get_bloginfo('stylesheet_directory') . '/build/css/customlogin.css" />';
+	get_stylesheet_directory_uri() . '/build/css/customlogin.css" />';
 	}
 	add_action ('login_head', 'inhabitent_custom_login');
 
