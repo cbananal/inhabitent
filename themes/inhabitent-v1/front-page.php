@@ -17,7 +17,7 @@ get_header(); ?>
 			<?php $terms = get_terms('product-type'); ?>
 			<?php if ( !empty($terms) && !is_wp_error($terms) ) : ?>
 			<section class="shop-container">
-				<h1>Shop Stuff</h1>
+				<h2>Shop Stuff</h2>
 				<div class="shop-cta">
 					<?php foreach ($terms as $term) : ?>
 						<div>
@@ -32,7 +32,7 @@ get_header(); ?>
 			<!--end section shop-container-->
 			<?php endif; ?>
 			<section>
-				<h1>Inhabitent Journal</h1>
+				<h2>Inhabitent Journal</h2>
 				<div class="entries-container">
 					<?php
 					   $args = array( 'post_type' => 'post', 'posts_per_page' => 3 );
@@ -56,7 +56,7 @@ get_header(); ?>
 			</section>
 			<!--end featured-entries-->
 			<section class="featured-adventures">
-				<h1>Latest Adventures</h1>
+				<h2>Latest Adventures</h2>
 				<div class="adventures-container">
 					<div class="featured-adventure-1">
 						<h2><a href="#">Getting Back to Nature in a Canoe</a></h2>
