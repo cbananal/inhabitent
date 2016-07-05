@@ -59,7 +59,7 @@ get_header(); ?>
 				<h2>Latest Adventures</h2>
 				<div class="adventures-container">
 					<div class="featured-adventure-1">
-						<h2><a href="#">Getting Back to Nature in a Canoe</a></h2>
+						<h3><a href="#">Getting Back to Nature in a Canoe</a></h3>
 						<a href="#">Read More</a>
 					</div>
 					<div class="adventures-right-container">
