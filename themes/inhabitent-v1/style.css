@@ -1417,7 +1417,7 @@ a.secondary-button {
     background-color: #248A83;
     border: 0; }
 
-.page-title {
+.error404 .page-title, .search-results .page-title, .date .page-title, .category .page-title, .tag .page-title {
   padding-bottom: 30px;
   font-size: 2.3rem;
   font-family: "Novecento", sans-serif;
@@ -1907,6 +1907,10 @@ a.secondary-button {
 .error404 .day-of-week, .search-results .day-of-week {
   font-weight: bold; }
 
+.error404 .page-title, .search-results .page-title {
+  border-bottom: 0;
+  padding-bottom: 0; }
+
 .error404 .page-content fieldset, .search-results .page-content fieldset {
   font-size: 1.1rem;
   color: #2f1339;
@@ -2168,9 +2172,9 @@ a.secondary-button {
   .search-no-results .content-area .search-form .search-field {
     text-transform: none; }
 
-/* Monthly Archive */
+/* Monthly Archive, Tag and Category */
 .date .content-area, .tag .content-area, .category .content-area {
-  padding: 45px 40px 50px 8px; }
+  padding: 30px 40px 50px 8px; }
 
 /*=======================================*/
 /*------ Inhabitent: Custom Styles ------*/

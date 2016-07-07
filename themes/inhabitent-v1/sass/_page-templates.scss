@@ -16,15 +16,17 @@ a.secondary-button {
   @include secondary-button;
 }
 
-//Mainly used for monthly archives, categories and tags
-.page-title {
-  padding-bottom: 30px;
-  font-size: 2.3rem;
-  font-family: $font_accent;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border-bottom: $border_solid;
+.error404, .date, .category, .tag {
+  .page-title {
+    padding-bottom: 30px;
+    font-size: 2.3rem;
+    font-family: $font_accent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: $border_solid;
+  }
 }
+
 
 /*------- Custom/Individual Templates -----*/
 
@@ -252,6 +254,10 @@ a.secondary-button {
 
 .error404 {
   @include two-columns;
+  .page-title {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
   .page-content fieldset {
     @include form;
     border: 0;
@@ -361,11 +367,11 @@ a.secondary-button {
 }
 
 
-/* Monthly Archive */
+/* Monthly Archive, Tag and Category */
 
 .date, .tag, .category {
   @extend .blog;
   .content-area {
-    padding: 45px 40px 50px 8px;
+    padding: 30px 40px 50px 8px;
   }
 }
