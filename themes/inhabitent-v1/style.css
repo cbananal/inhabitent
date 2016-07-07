@@ -1543,32 +1543,32 @@ a.secondary-button {
   .blog .widget-area, .date .widget-area, .tag .widget-area, .category .widget-area {
     width: 30%;
     padding: 0 5px 0 40px; }
-    .blog .widget-area .widget .widget-title, .date .widget-area .widget .widget-title, .tag .widget-area .widget .widget-title, .category .widget-area .widget .widget-title {
-      font-family: "Novecento", sans-serif;
-      text-transform: uppercase;
-      color: #2f1339;
-      font-size: 1.5rem;
-      letter-spacing: 1px;
-      padding: 30px 0 5px; }
-    .blog .widget-area .widget .contact-meta, .date .widget-area .widget .contact-meta, .tag .widget-area .widget .contact-meta, .category .widget-area .widget .contact-meta {
-      width: 100%;
-      height: auto;
-      display: -ms-flexbox;
-      display: flex; }
-      .blog .widget-area .widget .contact-meta i, .date .widget-area .widget .contact-meta i, .tag .widget-area .widget .contact-meta i, .category .widget-area .widget .contact-meta i {
-        width: 35px;
-        padding-top: 5px; }
-    .blog .widget-area .widget .day-of-week, .date .widget-area .widget .day-of-week, .tag .widget-area .widget .day-of-week, .category .widget-area .widget .day-of-week {
-      font-weight: bold; }
-    .blog .widget-area .widget ul, .date .widget-area .widget ul, .tag .widget-area .widget ul, .category .widget-area .widget ul {
-      margin-left: 0;
-      padding-left: 0;
-      list-style-type: none; }
-    .blog .widget-area .widget a, .date .widget-area .widget a, .tag .widget-area .widget a, .category .widget-area .widget a {
-      color: #248A83;
-      text-decoration: none; }
-      .blog .widget-area .widget a:hover, .date .widget-area .widget a:hover, .tag .widget-area .widget a:hover, .category .widget-area .widget a:hover {
-        color: #2f1339; }
+  .blog .widget ul, .date .widget ul, .tag .widget ul, .category .widget ul {
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none; }
+  .blog .widget a, .date .widget a, .tag .widget a, .category .widget a {
+    color: #248A83;
+    text-decoration: none; }
+    .blog .widget a:hover, .date .widget a:hover, .tag .widget a:hover, .category .widget a:hover {
+      color: #2f1339; }
+  .blog .widget-title, .date .widget-title, .tag .widget-title, .category .widget-title {
+    font-family: "Novecento", sans-serif;
+    text-transform: uppercase;
+    color: #2f1339;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding: 30px 0 5px; }
+  .blog .contact-meta, .date .contact-meta, .tag .contact-meta, .category .contact-meta {
+    width: 100%;
+    height: auto;
+    display: -ms-flexbox;
+    display: flex; }
+    .blog .contact-meta i, .date .contact-meta i, .tag .contact-meta i, .category .contact-meta i {
+      width: 35px;
+      padding-top: 5px; }
+  .blog .day-of-week, .date .day-of-week, .tag .day-of-week, .category .day-of-week {
+    font-weight: bold; }
   .blog .entry-content, .date .entry-content, .tag .entry-content, .category .entry-content {
     margin-bottom: 70px; }
   .blog .entry-header, .date .entry-header, .tag .entry-header, .category .entry-header {
@@ -1630,32 +1630,37 @@ a.secondary-button {
 .single-post .widget-area {
   width: 30%;
   padding: 0 5px 0 40px; }
-  .single-post .widget-area .widget .widget-title {
-    font-family: "Novecento", sans-serif;
-    text-transform: uppercase;
-    color: #2f1339;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    padding: 30px 0 5px; }
-  .single-post .widget-area .widget .contact-meta {
-    width: 100%;
-    height: auto;
-    display: -ms-flexbox;
-    display: flex; }
-    .single-post .widget-area .widget .contact-meta i {
-      width: 35px;
-      padding-top: 5px; }
-  .single-post .widget-area .widget .day-of-week {
-    font-weight: bold; }
-  .single-post .widget-area .widget ul {
-    margin-left: 0;
-    padding-left: 0;
-    list-style-type: none; }
-  .single-post .widget-area .widget a {
-    color: #248A83;
-    text-decoration: none; }
-    .single-post .widget-area .widget a:hover {
-      color: #2f1339; }
+
+.single-post .widget ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none; }
+
+.single-post .widget a {
+  color: #248A83;
+  text-decoration: none; }
+  .single-post .widget a:hover {
+    color: #2f1339; }
+
+.single-post .widget-title {
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase;
+  color: #2f1339;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  padding: 30px 0 5px; }
+
+.single-post .contact-meta {
+  width: 100%;
+  height: auto;
+  display: -ms-flexbox;
+  display: flex; }
+  .single-post .contact-meta i {
+    width: 35px;
+    padding-top: 5px; }
+
+.single-post .day-of-week {
+  font-weight: bold; }
 
 .single-post .entry-content {
   margin-bottom: 70px; }
@@ -1778,32 +1783,32 @@ a.secondary-button {
   .page-id-27 .widget-area {
     width: 30%;
     padding: 0 5px 0 40px; }
-    .page-id-27 .widget-area .widget .widget-title {
-      font-family: "Novecento", sans-serif;
-      text-transform: uppercase;
-      color: #2f1339;
-      font-size: 1.5rem;
-      letter-spacing: 1px;
-      padding: 30px 0 5px; }
-    .page-id-27 .widget-area .widget .contact-meta {
-      width: 100%;
-      height: auto;
-      display: -ms-flexbox;
-      display: flex; }
-      .page-id-27 .widget-area .widget .contact-meta i {
-        width: 35px;
-        padding-top: 5px; }
-    .page-id-27 .widget-area .widget .day-of-week {
-      font-weight: bold; }
-    .page-id-27 .widget-area .widget ul {
-      margin-left: 0;
-      padding-left: 0;
-      list-style-type: none; }
-    .page-id-27 .widget-area .widget a {
-      color: #248A83;
-      text-decoration: none; }
-      .page-id-27 .widget-area .widget a:hover {
-        color: #2f1339; }
+  .page-id-27 .widget ul {
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none; }
+  .page-id-27 .widget a {
+    color: #248A83;
+    text-decoration: none; }
+    .page-id-27 .widget a:hover {
+      color: #2f1339; }
+  .page-id-27 .widget-title {
+    font-family: "Novecento", sans-serif;
+    text-transform: uppercase;
+    color: #2f1339;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding: 30px 0 5px; }
+  .page-id-27 .contact-meta {
+    width: 100%;
+    height: auto;
+    display: -ms-flexbox;
+    display: flex; }
+    .page-id-27 .contact-meta i {
+      width: 35px;
+      padding-top: 5px; }
+  .page-id-27 .day-of-week {
+    font-weight: bold; }
   .page-id-27 .content-area {
     padding: 0px 40px 50px 8px; }
   .page-id-27 .entry-title {
@@ -1870,32 +1875,37 @@ a.secondary-button {
 .error404 .widget-area, .search-results .widget-area {
   width: 30%;
   padding: 0 5px 0 40px; }
-  .error404 .widget-area .widget .widget-title, .search-results .widget-area .widget .widget-title {
-    font-family: "Novecento", sans-serif;
-    text-transform: uppercase;
-    color: #2f1339;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    padding: 30px 0 5px; }
-  .error404 .widget-area .widget .contact-meta, .search-results .widget-area .widget .contact-meta {
-    width: 100%;
-    height: auto;
-    display: -ms-flexbox;
-    display: flex; }
-    .error404 .widget-area .widget .contact-meta i, .search-results .widget-area .widget .contact-meta i {
-      width: 35px;
-      padding-top: 5px; }
-  .error404 .widget-area .widget .day-of-week, .search-results .widget-area .widget .day-of-week {
-    font-weight: bold; }
-  .error404 .widget-area .widget ul, .search-results .widget-area .widget ul {
-    margin-left: 0;
-    padding-left: 0;
-    list-style-type: none; }
-  .error404 .widget-area .widget a, .search-results .widget-area .widget a {
-    color: #248A83;
-    text-decoration: none; }
-    .error404 .widget-area .widget a:hover, .search-results .widget-area .widget a:hover {
-      color: #2f1339; }
+
+.error404 .widget ul, .search-results .widget ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none; }
+
+.error404 .widget a, .search-results .widget a {
+  color: #248A83;
+  text-decoration: none; }
+  .error404 .widget a:hover, .search-results .widget a:hover {
+    color: #2f1339; }
+
+.error404 .widget-title, .search-results .widget-title {
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase;
+  color: #2f1339;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  padding: 30px 0 5px; }
+
+.error404 .contact-meta, .search-results .contact-meta {
+  width: 100%;
+  height: auto;
+  display: -ms-flexbox;
+  display: flex; }
+  .error404 .contact-meta i, .search-results .contact-meta i {
+    width: 35px;
+    padding-top: 5px; }
+
+.error404 .day-of-week, .search-results .day-of-week {
+  font-weight: bold; }
 
 .error404 .page-content fieldset, .search-results .page-content fieldset {
   font-size: 1.1rem;
@@ -1976,32 +1986,37 @@ a.secondary-button {
 .search-results .widget-area {
   width: 30%;
   padding: 0 5px 0 40px; }
-  .search-results .widget-area .widget .widget-title {
-    font-family: "Novecento", sans-serif;
-    text-transform: uppercase;
-    color: #2f1339;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    padding: 30px 0 5px; }
-  .search-results .widget-area .widget .contact-meta {
-    width: 100%;
-    height: auto;
-    display: -ms-flexbox;
-    display: flex; }
-    .search-results .widget-area .widget .contact-meta i {
-      width: 35px;
-      padding-top: 5px; }
-  .search-results .widget-area .widget .day-of-week {
-    font-weight: bold; }
-  .search-results .widget-area .widget ul {
-    margin-left: 0;
-    padding-left: 0;
-    list-style-type: none; }
-  .search-results .widget-area .widget a {
-    color: #248A83;
-    text-decoration: none; }
-    .search-results .widget-area .widget a:hover {
-      color: #2f1339; }
+
+.search-results .widget ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none; }
+
+.search-results .widget a {
+  color: #248A83;
+  text-decoration: none; }
+  .search-results .widget a:hover {
+    color: #2f1339; }
+
+.search-results .widget-title {
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase;
+  color: #2f1339;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  padding: 30px 0 5px; }
+
+.search-results .contact-meta {
+  width: 100%;
+  height: auto;
+  display: -ms-flexbox;
+  display: flex; }
+  .search-results .contact-meta i {
+    width: 35px;
+    padding-top: 5px; }
+
+.search-results .day-of-week {
+  font-weight: bold; }
 
 .search-results fieldset button {
   display: inline-block; }
@@ -2068,32 +2083,37 @@ a.secondary-button {
 .search-no-results .widget-area {
   width: 30%;
   padding: 0 5px 0 40px; }
-  .search-no-results .widget-area .widget .widget-title {
-    font-family: "Novecento", sans-serif;
-    text-transform: uppercase;
-    color: #2f1339;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    padding: 30px 0 5px; }
-  .search-no-results .widget-area .widget .contact-meta {
-    width: 100%;
-    height: auto;
-    display: -ms-flexbox;
-    display: flex; }
-    .search-no-results .widget-area .widget .contact-meta i {
-      width: 35px;
-      padding-top: 5px; }
-  .search-no-results .widget-area .widget .day-of-week {
-    font-weight: bold; }
-  .search-no-results .widget-area .widget ul {
-    margin-left: 0;
-    padding-left: 0;
-    list-style-type: none; }
-  .search-no-results .widget-area .widget a {
-    color: #248A83;
-    text-decoration: none; }
-    .search-no-results .widget-area .widget a:hover {
-      color: #2f1339; }
+
+.search-no-results .widget ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none; }
+
+.search-no-results .widget a {
+  color: #248A83;
+  text-decoration: none; }
+  .search-no-results .widget a:hover {
+    color: #2f1339; }
+
+.search-no-results .widget-title {
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase;
+  color: #2f1339;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  padding: 30px 0 5px; }
+
+.search-no-results .contact-meta {
+  width: 100%;
+  height: auto;
+  display: -ms-flexbox;
+  display: flex; }
+  .search-no-results .contact-meta i {
+    width: 35px;
+    padding-top: 5px; }
+
+.search-no-results .day-of-week {
+  font-weight: bold; }
 
 .search-no-results .content-area {
   padding-right: 40px; }
