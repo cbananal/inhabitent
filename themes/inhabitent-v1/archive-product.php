@@ -26,12 +26,12 @@ get_header(); ?>
       <?php endif; ?>
         <div class="product-list">
           <?php
-             $args = array( 'post_type' => 'product',
-                            'posts_per_page' => 16,
-														'order' => 'ASC',
-														'orderby' => 'title',
+          	$args = array( 'post_type' => 'product',
+													 'posts_per_page' => 16,
+													 'order' => 'ASC',
+													 'orderby' => 'title',
 													);
-             $product_post = get_posts( $args ); // returns an array of posts
+            $product_post = get_posts( $args ); // returns an array of posts
           ?>
           <?php foreach ($product_post as $post) : setup_postdata ($post); ?>
 						<div class="product-info-box">
