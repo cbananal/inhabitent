@@ -913,7 +913,7 @@ a {
   margin: 0 0 1.5em; }
 
 /* Asides */
-.blog .format-aside .entry-title, .date .format-aside .entry-title,
+.blog .format-aside .entry-title, .date .format-aside .entry-title, .tag .format-aside .entry-title, .category .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none; }
 
@@ -1417,6 +1417,14 @@ a.secondary-button {
     background-color: #248A83;
     border: 0; }
 
+.page-title {
+  padding-bottom: 30px;
+  font-size: 2.3rem;
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #e1e1e1; }
+
 /*------- Custom/Individual Templates -----*/
 /* Shop: Product's Archive Page / Tax Page */
 .product-heading {
@@ -1519,9 +1527,9 @@ a.secondary-button {
     font-family: "Novecento", sans-serif; }
 
 /* Journal and Monthly Archive*/
-.blog, .date {
+.blog, .date, .tag, .category {
   line-height: 1.75rem; }
-  .blog .site-content, .date .site-content {
+  .blog .site-content, .date .site-content, .tag .site-content, .category .site-content {
     padding-bottom: 0;
     width: 1120px;
     margin: 0 auto;
@@ -1529,43 +1537,43 @@ a.secondary-button {
     display: flex;
     -ms-flex-pack: center;
         justify-content: center; }
-    .blog .site-content .content-area, .date .site-content .content-area {
+    .blog .site-content .content-area, .date .site-content .content-area, .tag .site-content .content-area, .category .site-content .content-area {
       width: 85%;
       border-right: 1px solid #e1e1e1; }
-  .blog .widget-area, .date .widget-area {
+  .blog .widget-area, .date .widget-area, .tag .widget-area, .category .widget-area {
     width: 30%;
     padding: 0 5px 0 40px; }
-    .blog .widget-area .widget .widget-title, .date .widget-area .widget .widget-title {
+    .blog .widget-area .widget .widget-title, .date .widget-area .widget .widget-title, .tag .widget-area .widget .widget-title, .category .widget-area .widget .widget-title {
       font-family: "Novecento", sans-serif;
       text-transform: uppercase;
       color: #2f1339;
       font-size: 1.5rem;
       letter-spacing: 1px;
       padding: 30px 0 5px; }
-    .blog .widget-area .widget .contact-meta, .date .widget-area .widget .contact-meta {
+    .blog .widget-area .widget .contact-meta, .date .widget-area .widget .contact-meta, .tag .widget-area .widget .contact-meta, .category .widget-area .widget .contact-meta {
       width: 100%;
       height: auto;
       display: -ms-flexbox;
       display: flex; }
-      .blog .widget-area .widget .contact-meta i, .date .widget-area .widget .contact-meta i {
+      .blog .widget-area .widget .contact-meta i, .date .widget-area .widget .contact-meta i, .tag .widget-area .widget .contact-meta i, .category .widget-area .widget .contact-meta i {
         width: 35px;
         padding-top: 5px; }
-    .blog .widget-area .widget .day-of-week, .date .widget-area .widget .day-of-week {
+    .blog .widget-area .widget .day-of-week, .date .widget-area .widget .day-of-week, .tag .widget-area .widget .day-of-week, .category .widget-area .widget .day-of-week {
       font-weight: bold; }
-    .blog .widget-area .widget ul, .date .widget-area .widget ul {
+    .blog .widget-area .widget ul, .date .widget-area .widget ul, .tag .widget-area .widget ul, .category .widget-area .widget ul {
       margin-left: 0;
       padding-left: 0;
       list-style-type: none; }
-    .blog .widget-area .widget a, .date .widget-area .widget a {
+    .blog .widget-area .widget a, .date .widget-area .widget a, .tag .widget-area .widget a, .category .widget-area .widget a {
       color: #248A83;
       text-decoration: none; }
-      .blog .widget-area .widget a:hover, .date .widget-area .widget a:hover {
+      .blog .widget-area .widget a:hover, .date .widget-area .widget a:hover, .tag .widget-area .widget a:hover, .category .widget-area .widget a:hover {
         color: #2f1339; }
-  .blog .entry-content, .date .entry-content {
+  .blog .entry-content, .date .entry-content, .tag .entry-content, .category .entry-content {
     margin-bottom: 70px; }
-  .blog .entry-header, .date .entry-header {
+  .blog .entry-header, .date .entry-header, .tag .entry-header, .category .entry-header {
     position: relative; }
-  .blog .entry-title, .date .entry-title {
+  .blog .entry-title, .date .entry-title, .tag .entry-title, .category .entry-title {
     color: #fff;
     font-family: "Novecento", sans-serif;
     background-color: #248A83;
@@ -1577,12 +1585,12 @@ a.secondary-button {
     letter-spacing: 2px;
     position: absolute;
     top: 10px; }
-    .blog .entry-title a, .date .entry-title a {
+    .blog .entry-title a, .date .entry-title a, .tag .entry-title a, .category .entry-title a {
       color: #fff;
       text-decoration: none; }
-      .blog .entry-title a:hover, .date .entry-title a:hover {
+      .blog .entry-title a:hover, .date .entry-title a:hover, .tag .entry-title a:hover, .category .entry-title a:hover {
         color: #f0e4d1; }
-  .blog .entry-meta, .date .entry-meta {
+  .blog .entry-meta, .date .entry-meta, .tag .entry-meta, .category .entry-meta {
     color: #fff;
     font-family: "Novecento", sans-serif;
     background-color: #248A83;
@@ -1596,14 +1604,14 @@ a.secondary-button {
     position: absolute;
     bottom: 8px;
     right: 0; }
-    .blog .entry-meta a, .date .entry-meta a {
+    .blog .entry-meta a, .date .entry-meta a, .tag .entry-meta a, .category .entry-meta a {
       color: #fff;
       text-decoration: none; }
-      .blog .entry-meta a:hover, .date .entry-meta a:hover {
+      .blog .entry-meta a:hover, .date .entry-meta a:hover, .tag .entry-meta a:hover, .category .entry-meta a:hover {
         color: #f0e4d1; }
-  .blog .secondary-button, .date .secondary-button {
+  .blog .secondary-button, .date .secondary-button, .tag .secondary-button, .category .secondary-button {
     line-height: 0; }
-  .blog .content-area, .date .content-area {
+  .blog .content-area, .date .content-area, .tag .content-area, .category .content-area {
     padding: 0px 40px 50px 8px; }
 
 /* Journal: Single */
@@ -1889,12 +1897,6 @@ a.secondary-button {
     .error404 .widget-area .widget a:hover, .search-results .widget-area .widget a:hover {
       color: #2f1339; }
 
-.error404 .page-title, .search-results .page-title {
-  font-size: 2.3rem;
-  font-family: "Novecento", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px; }
-
 .error404 .page-content fieldset, .search-results .page-content fieldset {
   font-size: 1.1rem;
   color: #2f1339;
@@ -2147,7 +2149,7 @@ a.secondary-button {
     text-transform: none; }
 
 /* Monthly Archive */
-.date .content-area {
+.date .content-area, .tag .content-area, .category .content-area {
   padding: 45px 40px 50px 8px; }
 
 /*=======================================*/
